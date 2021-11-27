@@ -74,3 +74,9 @@ body {
   padding: 30px;
   border-radius: 20px;
 }
+@media only screen and (min-width: 1000px) {
+  /* For tablets: */
+  .center-flex{
+    width: 100px;
+  }
+}
