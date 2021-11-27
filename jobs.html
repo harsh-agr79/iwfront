@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
+    <link rel="stylesheet" href="./assets/nouislider.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="icon" href="./assets/images/title.png">
@@ -79,11 +81,75 @@
         }
     </style>
     <div>
-        <ul id="slide-out" class="sidenav sidenav-fixed" style="height: 100vh; z-index:-1;">
-            <li style="margin-top: 80px;"><a href="#!">First Sidebar Link</a></li> 
-            <li><a href="#!">Second Sidebar Link</a></li>
-          </ul>
-          <!-- <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
+      <div id="sortsec" class="hide-on-med-and-down">
+        <h6>By Job Type</h6>
+        <div class="row">
+          <div class="col s12">  <label>
+            <input type="checkbox" />
+            <span>Intership</span>
+          </label></div>
+          <div class="col s12">  <label>
+            <input type="checkbox" />
+            <span>Freshers</span>
+          </label></div>
+          <div class="col s12">  <label>
+            <input type="checkbox" />
+            <span>Part time</span>
+          </label></div>
+          <div class="col s12">  <label>
+            <input type="checkbox" />
+            <span>Full time</span>
+          </label></div>
+        </div>
+        <h6>By Sector</h6>
+        <div class="row">
+          <div class="col s12">  <label>
+            <input type="checkbox" />
+            <span>Sales</span>
+          </label></div>
+          <div class="col s12">  <label>
+            <input type="checkbox" />
+            <span>Marketing</span>
+          </label></div>
+          <div class="col s12">  <label>
+            <input type="checkbox" />
+            <span>Programming</span>
+          </label></div>
+          <div class="col s12">  <label>
+            <input type="checkbox" />
+            <span>Deisgning</span>
+          </label></div>
+        </div>
+        <h6>By Time</h6>
+        <div class="row">
+          <div class="col s12">  <label>
+            <input type="checkbox" />
+            <span>Today</span>
+          </label></div>
+          <div class="col s12">  <label>
+            <input type="checkbox" />
+            <span>Last 7 days</span>
+          </label></div>
+          <div class="col s12">  <label>
+            <input type="checkbox" />
+            <span>Last 15 days</span>
+          </label></div>
+          <div class="col s12">  <label>
+            <input type="checkbox" />
+            <span>Last 30 Days</span>
+          </label></div>
+        </div>
+        <h6>Salary Range</h6>
+        <!-- <div class="row"> -->
+          <!-- <div id="slider"></div> -->
+        <!-- </div> -->
+        <p class="range-field">
+          <span>Minimum employee-salary</span>
+          <input type="range" id="test5" value="0" min="0" max="100" />
+          <span>Maximum employee-salary</span>
+          <input type="range" id="test5" min="0" value="100" max="100" />
+        </p>
+      </div>
     </div>
     <div id="main" style="min-height: 100vh;">
         <div class="container" style="margin-top: 10vh;">
@@ -295,6 +361,7 @@
     </div>
 </main>
 
+
   <!-- Dropdown Structure -->
 
     <!-- Modal Structure -->
@@ -417,7 +484,7 @@
         
         </div>
       </div>
-      <footer class="page-footer theme" style="margin-top: 10vh;">
+      <footer class="page-footer theme" style="position:relative;clear: both; margin-top: 10vh;">
         <div class="">
           <div class="row">
             <div class="col l3 s12">
@@ -475,6 +542,7 @@
         </div>
       </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/nouislider.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./assets/script.js"></script>
 </body>
