@@ -20,15 +20,22 @@ body {
     flex-direction: column;
     border-radius: 20px;
     padding: 20px;
-    width: 170px;
+    width: 10vw;
     margin: 10px 10px 30px 10px;
 }
 .flexcontainer{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
     flex-direction: row;
     overflow-x: scroll;
+}
+.flexcontainer2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  overflow-x: scroll;
 }
 .flexcontainer::-webkit-scrollbar {
       width: 10px;
@@ -73,10 +80,4 @@ body {
 .cardbox{
   padding: 30px;
   border-radius: 20px;
-}
-@media only screen and (min-width: 1000px) {
-  /* For tablets: */
-  .center-flex{
-    width: 100px;
-  }
 }
