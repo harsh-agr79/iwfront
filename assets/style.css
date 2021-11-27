@@ -28,14 +28,14 @@ body {
     /* align-items: center; */
     /* justify-content: center; */
     flex-direction: row;
-    overflow-x: hidden;
+    overflow-x: scroll;
 }
 .flexcontainer2{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  overflow-x: scroll;
+  overflow-x: hidden;
 }
 .flexcontainer::-webkit-scrollbar {
       width: 10px;
