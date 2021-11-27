@@ -28,7 +28,7 @@ body {
     /* align-items: center; */
     /* justify-content: center; */
     flex-direction: row;
-    overflow-x: scroll;
+    overflow-x: hidden;
 }
 .flexcontainer2{
   display: flex;
