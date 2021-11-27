@@ -11,3 +11,12 @@ function autoplay() {
     setTimeout(autoplay, 6500);
 }
 autoplay()   
+
+$(document).ready(function(){
+    $('.modal').modal();
+  });
+
+  $('.dropdown-trigger').dropdown({
+      constrainWidth: false,
+      coverTrigger:false,
+  });

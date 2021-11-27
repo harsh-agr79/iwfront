@@ -16,29 +16,51 @@
     <title>Internwheel</title>
 </head>
 <body>
+    <ul id='dropdown1' class='dropdown-content'>
+        <li><a class="modal-trigger" href="#modal1">As a Employer</a></li>
+        <li><a class="modal-trigger" href="#modal2">As a employee</a></li>
+      </ul>
+      <ul id='dropdown2' class='dropdown-content'>
+        <li><a class="modal-trigger" href="#modal1">As a Employer</a></li>
+        <li><a class="modal-trigger" href="#modal2">As a employee</a></li>
+      </ul>
+      <ul id='dropdown3' class='dropdown-content'>
+        <li><a class="modal-trigger" href="#modal1">As a Employer</a></li>
+        <li><a class="modal-trigger" href="#modal2">As a employee</a></li>
+      </ul>
     <nav class="grey lighten-3">
         <div class="nav-wrapper">
           <a href="#!" class="brand-logo hide-on-med-and-down" style="margin-left: 10px; margin-top: 5px;"><img src="./assets/images/iwmain.png" height="40" alt="">
           </a>
           <a href="#!" class="brand-logo hide-on-large-only"><img src="./assets/images/iw.png" height="50" alt="">
           </a>
+          <a class="right hide-on-large-only" style="margin-right:10px;"><span class="btn theme modal-trigger" href="#modal3">
+            Login
+          </span></a>
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
           <ul class="right hide-on-med-and-down">
-            <li><a class="black-text" href="sass.html">Sass</a></li>
-            <li><a class="black-text" href="badges.html">Components</a></li>
-            <li><a class="black-text" href="collapsible.html">Javascript</a></li>
-            <li><a class="black-text" href="mobile.html">Mobile</a></li>
-            <li><a class=""><span class="loginbtn z-depth-1">Login</span></a></li>
-            <li><a class="white-text btn-small waves-effect theme" style="border-radius: 20px;" href="">register<i class="material-icons right">expand_more</i></a></li>
+            <li><a class="black-text" href="sass.html">Internships</a></li>
+            <li><a class="black-text" href="badges.html">Freshers Jobs</a></li>
+            <li><a class="black-text" href="collapsible.html">Jobs</a></li>
+            <li><a class="black-text" href="mobile.html">Contact Us</a></li>
+            <li><a class=""><span class="loginbtn z-depth-1 modal-trigger" href="#modal3">Login</span></a></li>
+            <li><a class="white-text btn-small waves-effect theme dropdown-trigger" style="border-radius: 20px;" data-target="dropdown1">register<i class="material-icons right">expand_more</i></a></li>
+
           </ul>
         </div>
       </nav>
     
       <ul class="sidenav" id="mobile-demo">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
+        <li><a class="black-text" href="sass.html">Internships</a></li>
+        <li><a class="black-text" href="badges.html">Freshers Jobs</a></li>
+        <li><a class="black-text" href="collapsible.html">Jobs</a></li>
+        <li><a class="black-text" href="mobile.html">Contact Us</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="black-text modal-trigger" href="#modal1">Register as a Employer</a></li>
+        <li><a class="black-text modal-trigger" href="#modal2">Register as A Employee</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="black-text modal-trigger" href="#modal3">Login</a></li>
+        <li><div class="divider"></div></li>
       </ul>
       <div style="margin-left: 1vw; margin-top: 1vw; margin-right: 1vw; border-radius: 30px;">
         <div class="carousel carousel-slider center" style="border-radius: 30px; height: 500px;">
@@ -188,15 +210,137 @@
             <h3 class="center-align" style="font-weight: 600;">Wanna explore More?</h3>
             <div class="row" style="margin-top: 10vh;">
                 <div class="col s6 right-align">
-                    <button class="waves-effect theme btn-large" style=" border-radius: 20px;">Login</button>
+                    <button class="waves-effect theme btn-large modal-trigger" style=" border-radius: 20px;" href="#modal3">Login</button>
                 </div>
                 <div class="col s6 left-align">
-                    <button class="waves-effect theme btn-large" style="border-radius: 20px;">Register Now</button>
+                    <button class="waves-effect theme btn-large dropdown-trigger" style="border-radius: 20px;" href="#dropdown2">Register Now</button>
                 </div>
             </div>
         </div>
         
     </div>
+  <!-- Dropdown Structure -->
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+            <div class="center">
+                <img src="./assets/pngs/employee-salary.png" height="200" alt="">
+            </div>
+        <h4 class="center-align">Register as a Employer</h4>
+        <form action="" class="row container">
+            <div class="input-field col s12 m6">
+                <input placeholder="First Name" id="first_name" type="text" class="validate">
+              </div>
+              <div class="input-field col s12 m6">
+                <input placeholder="Last Name" type="text" class="validate">
+              </div>
+              <div class="input-field col s12 m6">
+                <input placeholder="Company Name" type="text" class="validate">
+              </div>
+              <div class="input-field col s12 m6">
+                <input id="email" type="email" placeholder="Email" class="validate">
+              </div>
+              <div class="input-field col s12 m6">
+                <input type="number" placeholder="Phone Number" class="validate">
+              </div>
+              <div class="input-field col s12 s6">
+                <input placeholder="Make a user name" type="text" class="validate">
+              </div>
+              <div class="input-field col s12">
+                <input id="password" type="password" placeholder="password" class="validate">
+              </div>
+              <div class="input-field col s12">
+                <input id="password" type="password" placeholder="Confirm Password" class="validate">
+              </div>
+              <label>
+                <input type="checkbox" />
+                <span>Agree to our Terms and Conditions</span>
+              </label>
+              <div class="col s12 center">
+                <button type="reset" class="modal-close waves-effect waves-green btn-large theme">Register</button>
+              </div>
+              
+      </div>
+      <div class="modal-footer center">
+      
+      </div>
+    </form>
+    </div>
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+              <div class="center">
+                  <img src="./assets/pngs/team.png" height="200" alt="">
+              </div>
+          <h4 class="center-align">Register as a Employee</h4>
+          <form action="" class="row container">
+              <div class="input-field col s12 m6">
+                  <input placeholder="First Name" id="first_name" type="text" class="validate">
+                </div>
+                <div class="input-field col s12 m6">
+                  <input placeholder="Last Name" type="text" class="validate">
+                </div>
+                <div class="input-field col s12 m6">
+                  <input id="email" type="email" placeholder="Email" class="validate">
+                </div>
+                <div class="input-field col s12 m6">
+                  <input type="number" placeholder="Phone Number" class="validate">
+                </div>
+                <div class="input-field col s12 m12">
+                  <input placeholder="Make a user name" type="text" class="validate">
+                </div>
+                <div class="input-field col s12">
+                  <input id="password" type="password" placeholder="password" class="validate">
+                </div>
+                <div class="input-field col s12">
+                  <input id="password" type="password" placeholder="Confirm Password" class="validate">
+                </div>
+                <div class="col s12">
+                    <label>
+                        <input type="checkbox" />
+                        <span>Agree to our Terms and Conditions</span>
+                      </label>
+                </div>
+                
+                <div class="col s12 center">
+                  <button type="reset" class="modal-close waves-effect waves-green btn-large theme">Register</button>
+                </div>
+                
+        </div>
+        <div class="modal-footer center">
+        
+        </div>
+      </form>
+      </div>
+      <div id="modal3" class="modal">
+        <div class="modal-content">
+              <div class="center">
+                  <img src="./assets/svgs/login.svg" height="100" alt="">
+              </div>
+          <h4 class="center-align" style="margin-top: 4vh;">Log In</h4>
+          <form action="" class="row container">
+                <div class="input-field col s12">
+                  <input id="email" type="text" placeholder="Email or Username" class="validate">
+                </div>
+                <div class="input-field col s12">
+                  <input id="password" type="password" placeholder="password" class="validate">
+                </div>
+                
+                <div class="col s12 center">
+                  <button type="reset" class="modal-close waves-effect waves-green btn-large theme">Login</button>
+                </div>
+      </form>
+             <div class="row center">
+                 <span>
+                    Dont have an accont?<a href="#dropdown3" class="dropdown-trigger"> Register Now!</a>
+                 </span>
+              
+             </div>   
+        </div>
+        <div class="modal-footer center">
+        
+        </div>
+      </div>
       <footer class="page-footer theme" style="margin-top: 10vh;">
         <div class="">
           <div class="row">
