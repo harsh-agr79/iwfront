@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito Sans');
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+.theme{
+    background: #006994;
+}
+.loginbtn{
+    color: black;
+    border: 3px solid #006994;
+    padding: 5px 30px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+.center-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 20px;
+    width: 170px;
+    margin: 10px 10px 30px 10px;
+}
+.flexcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+.flexcontainer::-webkit-scrollbar {
+      width: 10px;
+      height: 7px;
+    }
+    .flexcontainer::-webkit-scrollbar-thumb {
+      background: #006a94;
+      border-radius: 10px;
+      /* width: 2px;/ */
+    }
+    .flexcontainer::-webkit-scrollbar-thumb:hover {
+      background: #005070;
+      width: 10px;
+    }
+    .flexcontainer::-webkit-scrollbar-track {
+      background: #ffffff00;
+      border-radius: 10px;
+      box-shadow: inset 7px 10px 12px #f0f0f000;
+    }
+  
+    ::-webkit-scrollbar {
+      width: 13px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+      /* box-shadow: inset 0 0 5px grey;  */
+      border-radius: 10px;
+    }
+     
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #006994; 
+      border-radius: 10px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #005070; 
+    }
+
+.cardbox{
+  padding: 30px;
+  border-radius: 20px;
+}
