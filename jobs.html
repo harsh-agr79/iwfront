@@ -30,7 +30,7 @@
         <li><a class="modal-trigger" href="#modal1">As a Employer</a></li>
         <li><a class="modal-trigger" href="#modal2">As a employee</a></li>
       </ul>
-      <div class="navbar-fixed">
+      <div class="">
         <nav class="grey lighten-3">
             <div class="nav-wrapper">
               <a href="./index.html" class="brand-logo hide-on-med-and-down" style="margin-left: 10px; margin-top: 5px;"><img src="./assets/images/iwmain.png" height="40" alt="">
@@ -68,142 +68,49 @@
         <li><div class="divider"></div></li>
       </ul>
 <main>
-    <style>
-    
-        #main{
-          padding-left: 300px;
-        }
-    
-        @media only screen and (max-width : 992px) {
-          #main {
-            padding-left: 0;
-          }
-        }
-    </style>
-    <div>
-      <div id="sortsec" class="hide-on-med-and-down">
-        <h6>By Job Type</h6>
-        <div class="row">
-          <div class="col s12">  <label>
-            <input type="checkbox" />
-            <span>Intership</span>
-          </label></div>
-          <div class="col s12">  <label>
-            <input type="checkbox" />
-            <span>Freshers</span>
-          </label></div>
-          <div class="col s12">  <label>
-            <input type="checkbox" />
-            <span>Part time</span>
-          </label></div>
-          <div class="col s12">  <label>
-            <input type="checkbox" />
-            <span>Full time</span>
-          </label></div>
-        </div>
-        <h6>By Sector</h6>
-        <div class="row">
-          <div class="col s12">  <label>
-            <input type="checkbox" />
-            <span>Sales</span>
-          </label></div>
-          <div class="col s12">  <label>
-            <input type="checkbox" />
-            <span>Marketing</span>
-          </label></div>
-          <div class="col s12">  <label>
-            <input type="checkbox" />
-            <span>Programming</span>
-          </label></div>
-          <div class="col s12">  <label>
-            <input type="checkbox" />
-            <span>Deisgning</span>
-          </label></div>
-        </div>
-        <h6>By Time</h6>
-        <div class="row">
-          <div class="col s12">  <label>
-            <input type="checkbox" />
-            <span>Today</span>
-          </label></div>
-          <div class="col s12">  <label>
-            <input type="checkbox" />
-            <span>Last 7 days</span>
-          </label></div>
-          <div class="col s12">  <label>
-            <input type="checkbox" />
-            <span>Last 15 days</span>
-          </label></div>
-          <div class="col s12">  <label>
-            <input type="checkbox" />
-            <span>Last 30 Days</span>
-          </label></div>
-        </div>
-        <h6>Salary Range</h6>
-        <!-- <div class="row"> -->
-          <!-- <div id="slider"></div> -->
-        <!-- </div> -->
-        <p class="range-field">
-          <span>Minimum employee-salary</span>
-          <input type="range" id="test5" value="0" min="0" max="100" />
-          <span>Maximum employee-salary</span>
-          <input type="range" id="test5" min="0" value="100" max="100" />
-        </p>
+  <!-- <div id="sort" class="hide-on-med-and-down"> -->
+    <div class="row grey lighten-4" id="sort">
+      <div class="input-field col s3">
+        <select multiple>
+          <option value="" disabled selected class="white-text">Job Type</option>
+          <option value="1">Internship</option>
+          <option value="2">Freshers</option>
+          <option value="3">Full Time</option>
+        </select>
+        <!-- <label>Materialize Multiple Select</label> -->
       </div>
+      <div class="input-field col s3">
+        <select multiple>
+          <option value="" disabled selected class="white-text">Time Job Posted</option>
+          <option value="1">Last 24 Hrs</option>
+          <option value="2">Last 7 Days</option>
+          <option value="3">Last 15 days</option>
+          <option value="3">Last 30 days</option>
+        </select>
+        <!-- <label>Materialize Multiple Select</label> -->
+      </div>
+      <div class="input-field col s3">
+        <select multiple>
+          <option value="" disabled selected class="white-text">Sector</option>
+          <option value="1">Sales</option>
+          <option value="2">Marketing</option>
+          <option value="3">Finance</option>
+          <option value="3">Coding</option>
+          <option value="3">Designing</option>
+        </select>
+        <!-- <label>Materialize Multiple Select</label> -->
+      </div>
+      <div class="input-field col s2">
+        <h6>Salary range</h6>
+        <div id="test-slider"></div>       
+      </div>
+      
     </div>
+  <!-- </div> -->
+
     <div id="main" style="min-height: 100vh;">
-        <div class="container" style="margin-top: 10vh;">
-            <div class="jobbox z-depth-2 hoverable">
-                <div class="row">
-                    <div class="col s12 row valign-wrapper" style="margin-bottom:0">
-                        <div class="col s10 m10">
-                            <h4 class="title">Laravel Developer</h4>
-                        </div>
-                        <div class="col s2 m2">
-                            <img src="./assets/images/iw.png" height="40" alt="">
-                        </div>
-                    </div>
-                    <div class="col s12 row" style="margin-top: 0;margin-bottom: 0;">
-                        <div class="col s12">
-                            <h6 class="companyname" style="font-weight: 600;">My Power</h6>
-                        </div>    
-                    </div>
-                    <div class="col s12" style="margin-top: 0px;">
-                        <div class="center">
-                            <span class="text" class="center-align">Work On site</span>
-                        </div>
-                    </div>
-                    <div class="col s12 row" style="margin-top: 15px;">
-                        <div class="col s3 center-align">
-                           <span class="text" style="font-weight: 600;">Start date</span>
-                           <br>
-                           <span class="text2">Immidiately</span>
-                        </div>
-                        <div class="col s3 center-align"> 
-                            <span class="text" style="font-weight: 600;">Duration</span>
-                            <br>
-                            <span class="text2">2 Months</span></div>
-                        <div class="col s3 center-align">
-                            <span class="text" style="font-weight: 600;">Stipend</span>
-                            <br>
-                            <span class="text2">Performance Based</span>
-                        </div>
-                        <div class="col s3 center-align">
-                            <span class="text" style="font-weight: 600">Application Deadline</span>
-                            <br>
-                            <span class="text2">Dec 5</span>
-                        </div>
-                    </div>
-                    <div class="col s12 row" style="margin-top: 10px; margin-bottom: 0;">
-                      <div class="col s6 left-align">
-                        <span class="jobtype">Internship</span>
-                      </div>
-                      <div class="col s6 right-align">
-                        <a href="">View Details <i class="material-icons right">arrow_forward</i></a>
-                      </div>
-                    </div>
-                </div>
-            </div>
+        <div class="row" style="margin-top: 10vh;">
+          <div class="col s12 m6" style="margin-top: 10px;">
             <div class="jobbox z-depth-2 hoverable">
               <div class="row">
                   <div class="col s12 row valign-wrapper" style="margin-bottom:0">
@@ -255,108 +162,220 @@
                   </div>
               </div>
           </div>
-          <div class="jobbox z-depth-2 hoverable">
-            <div class="row">
-                <div class="col s12 row valign-wrapper" style="margin-bottom:0">
-                    <div class="col s10 m10">
-                        <h4 class="title">Laravel Developer</h4>
+          </div>
+          <div class="col s12 m6" style="margin-top: 10px;">
+            <div class="jobbox z-depth-2 hoverable">
+              <div class="row">
+                  <div class="col s12 row valign-wrapper" style="margin-bottom:0">
+                      <div class="col s10 m10">
+                          <h4 class="title">Laravel Developer</h4>
+                      </div>
+                      <div class="col s2 m2">
+                          <img src="./assets/images/iw.png" height="40" alt="">
+                      </div>
+                  </div>
+                  <div class="col s12 row" style="margin-top: 0;margin-bottom: 0;">
+                      <div class="col s12">
+                          <h6 class="companyname" style="font-weight: 600;">My Power</h6>
+                      </div>    
+                  </div>
+                  <div class="col s12" style="margin-top: 0px;">
+                      <div class="center">
+                          <span class="text" class="center-align">Work On site</span>
+                      </div>
+                  </div>
+                  <div class="col s12 row" style="margin-top: 15px;">
+                      <div class="col s3 center-align">
+                         <span class="text" style="font-weight: 600;">Start date</span>
+                         <br>
+                         <span class="text2">Immidiately</span>
+                      </div>
+                      <div class="col s3 center-align"> 
+                          <span class="text" style="font-weight: 600;">Duration</span>
+                          <br>
+                          <span class="text2">2 Months</span></div>
+                      <div class="col s3 center-align">
+                          <span class="text" style="font-weight: 600;">Stipend</span>
+                          <br>
+                          <span class="text2">Performance Based</span>
+                      </div>
+                      <div class="col s3 center-align">
+                          <span class="text" style="font-weight: 600">Application Deadline</span>
+                          <br>
+                          <span class="text2">Dec 5</span>
+                      </div>
+                  </div>
+                  <div class="col s12 row" style="margin-top: 10px; margin-bottom: 0;">
+                    <div class="col s6 left-align">
+                      <span class="jobtype">Internship</span>
                     </div>
-                    <div class="col s2 m2">
-                        <img src="./assets/images/iw.png" height="40" alt="">
+                    <div class="col s6 right-align">
+                      <a href="">View Details <i class="material-icons right">arrow_forward</i></a>
                     </div>
-                </div>
-                <div class="col s12 row" style="margin-top: 0;margin-bottom: 0;">
-                    <div class="col s12">
-                        <h6 class="companyname" style="font-weight: 600;">My Power</h6>
-                    </div>    
-                </div>
-                <div class="col s12" style="margin-top: 0px;">
-                    <div class="center">
-                        <span class="text" class="center-align">Work On site</span>
-                    </div>
-                </div>
-                <div class="col s12 row" style="margin-top: 15px;">
-                    <div class="col s3 center-align">
-                       <span class="text" style="font-weight: 600;">Start date</span>
-                       <br>
-                       <span class="text2">Immidiately</span>
-                    </div>
-                    <div class="col s3 center-align"> 
-                        <span class="text" style="font-weight: 600;">Duration</span>
-                        <br>
-                        <span class="text2">2 Months</span></div>
-                    <div class="col s3 center-align">
-                        <span class="text" style="font-weight: 600;">Stipend</span>
-                        <br>
-                        <span class="text2">Performance Based</span>
-                    </div>
-                    <div class="col s3 center-align">
-                        <span class="text" style="font-weight: 600">Application Deadline</span>
-                        <br>
-                        <span class="text2">Dec 5</span>
-                    </div>
-                </div>
-                <div class="col s12 row" style="margin-top: 10px; margin-bottom: 0;">
-                  <div class="col s6 left-align">
-                    <span class="jobtype">Internship</span>
                   </div>
-                  <div class="col s6 right-align">
-                    <a href="">View Details <i class="material-icons right">arrow_forward</i></a>
-                  </div>
-                </div>
-            </div>
-        </div>
-        <div class="jobbox z-depth-2 hoverable">
-          <div class="row">
-              <div class="col s12 row valign-wrapper" style="margin-bottom:0">
-                  <div class="col s10 m10">
-                      <h4 class="title">Laravel Developer</h4>
-                  </div>
-                  <div class="col s2 m2">
-                      <img src="./assets/images/iw.png" height="40" alt="">
-                  </div>
-              </div>
-              <div class="col s12 row" style="margin-top: 0;margin-bottom: 0;">
-                  <div class="col s12">
-                      <h6 class="companyname" style="font-weight: 600;">My Power</h6>
-                  </div>    
-              </div>
-              <div class="col s12" style="margin-top: 0px;">
-                  <div class="center">
-                      <span class="text" class="center-align">Work On site</span>
-                  </div>
-              </div>
-              <div class="col s12 row" style="margin-top: 15px;">
-                  <div class="col s3 center-align">
-                     <span class="text" style="font-weight: 600;">Start date</span>
-                     <br>
-                     <span class="text2">Immidiately</span>
-                  </div>
-                  <div class="col s3 center-align"> 
-                      <span class="text" style="font-weight: 600;">Duration</span>
-                      <br>
-                      <span class="text2">2 Months</span></div>
-                  <div class="col s3 center-align">
-                      <span class="text" style="font-weight: 600;">Stipend</span>
-                      <br>
-                      <span class="text2">Performance Based</span>
-                  </div>
-                  <div class="col s3 center-align">
-                      <span class="text" style="font-weight: 600">Application Deadline</span>
-                      <br>
-                      <span class="text2">Dec 5</span>
-                  </div>
-              </div>
-              <div class="col s12 row" style="margin-top: 10px; margin-bottom: 0;">
-                <div class="col s6 left-align">
-                  <span class="jobtype">Internship</span>
-                </div>
-                <div class="col s6 right-align">
-                  <a href="">View Details <i class="material-icons right">arrow_forward</i></a>
-                </div>
               </div>
           </div>
-      </div>
+          </div>
+          <div class="col s12 m6"  style="margin-top: 10px;">
+            <div class="jobbox z-depth-2 hoverable">
+              <div class="row">
+                  <div class="col s12 row valign-wrapper" style="margin-bottom:0">
+                      <div class="col s10 m10">
+                          <h4 class="title">Laravel Developer</h4>
+                      </div>
+                      <div class="col s2 m2">
+                          <img src="./assets/images/iw.png" height="40" alt="">
+                      </div>
+                  </div>
+                  <div class="col s12 row" style="margin-top: 0;margin-bottom: 0;">
+                      <div class="col s12">
+                          <h6 class="companyname" style="font-weight: 600;">My Power</h6>
+                      </div>    
+                  </div>
+                  <div class="col s12" style="margin-top: 0px;">
+                      <div class="center">
+                          <span class="text" class="center-align">Work On site</span>
+                      </div>
+                  </div>
+                  <div class="col s12 row" style="margin-top: 15px;">
+                      <div class="col s3 center-align">
+                         <span class="text" style="font-weight: 600;">Start date</span>
+                         <br>
+                         <span class="text2">Immidiately</span>
+                      </div>
+                      <div class="col s3 center-align"> 
+                          <span class="text" style="font-weight: 600;">Duration</span>
+                          <br>
+                          <span class="text2">2 Months</span></div>
+                      <div class="col s3 center-align">
+                          <span class="text" style="font-weight: 600;">Stipend</span>
+                          <br>
+                          <span class="text2">Performance Based</span>
+                      </div>
+                      <div class="col s3 center-align">
+                          <span class="text" style="font-weight: 600">Application Deadline</span>
+                          <br>
+                          <span class="text2">Dec 5</span>
+                      </div>
+                  </div>
+                  <div class="col s12 row" style="margin-top: 10px; margin-bottom: 0;">
+                    <div class="col s6 left-align">
+                      <span class="jobtype">Internship</span>
+                    </div>
+                    <div class="col s6 right-align">
+                      <a href="">View Details <i class="material-icons right">arrow_forward</i></a>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          </div>
+          <div class="col s12 m6" style="margin-top: 10px;">
+            <div class="jobbox z-depth-2 hoverable">
+              <div class="row">
+                  <div class="col s12 row valign-wrapper" style="margin-bottom:0">
+                      <div class="col s10 m10">
+                          <h4 class="title">Laravel Developer</h4>
+                      </div>
+                      <div class="col s2 m2">
+                          <img src="./assets/images/iw.png" height="40" alt="">
+                      </div>
+                  </div>
+                  <div class="col s12 row" style="margin-top: 0;margin-bottom: 0;">
+                      <div class="col s12">
+                          <h6 class="companyname" style="font-weight: 600;">My Power</h6>
+                      </div>    
+                  </div>
+                  <div class="col s12" style="margin-top: 0px;">
+                      <div class="center">
+                          <span class="text" class="center-align">Work On site</span>
+                      </div>
+                  </div>
+                  <div class="col s12 row" style="margin-top: 15px;">
+                      <div class="col s3 center-align">
+                         <span class="text" style="font-weight: 600;">Start date</span>
+                         <br>
+                         <span class="text2">Immidiately</span>
+                      </div>
+                      <div class="col s3 center-align"> 
+                          <span class="text" style="font-weight: 600;">Duration</span>
+                          <br>
+                          <span class="text2">2 Months</span></div>
+                      <div class="col s3 center-align">
+                          <span class="text" style="font-weight: 600;">Stipend</span>
+                          <br>
+                          <span class="text2">Performance Based</span>
+                      </div>
+                      <div class="col s3 center-align">
+                          <span class="text" style="font-weight: 600">Application Deadline</span>
+                          <br>
+                          <span class="text2">Dec 5</span>
+                      </div>
+                  </div>
+                  <div class="col s12 row" style="margin-top: 10px; margin-bottom: 0;">
+                    <div class="col s6 left-align">
+                      <span class="jobtype">Internship</span>
+                    </div>
+                    <div class="col s6 right-align">
+                      <a href="">View Details <i class="material-icons right">arrow_forward</i></a>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          </div>
+          <div class="col s12 m6" style="margin-top: 10px;">
+            <div class="jobbox z-depth-2 hoverable">
+              <div class="row">
+                  <div class="col s12 row valign-wrapper" style="margin-bottom:0">
+                      <div class="col s10 m10">
+                          <h4 class="title">Laravel Developer</h4>
+                      </div>
+                      <div class="col s2 m2">
+                          <img src="./assets/images/iw.png" height="40" alt="">
+                      </div>
+                  </div>
+                  <div class="col s12 row" style="margin-top: 0;margin-bottom: 0;">
+                      <div class="col s12">
+                          <h6 class="companyname" style="font-weight: 600;">My Power</h6>
+                      </div>    
+                  </div>
+                  <div class="col s12" style="margin-top: 0px;">
+                      <div class="center">
+                          <span class="text" class="center-align">Work On site</span>
+                      </div>
+                  </div>
+                  <div class="col s12 row" style="margin-top: 15px;">
+                      <div class="col s3 center-align">
+                         <span class="text" style="font-weight: 600;">Start date</span>
+                         <br>
+                         <span class="text2">Immidiately</span>
+                      </div>
+                      <div class="col s3 center-align"> 
+                          <span class="text" style="font-weight: 600;">Duration</span>
+                          <br>
+                          <span class="text2">2 Months</span></div>
+                      <div class="col s3 center-align">
+                          <span class="text" style="font-weight: 600;">Stipend</span>
+                          <br>
+                          <span class="text2">Performance Based</span>
+                      </div>
+                      <div class="col s3 center-align">
+                          <span class="text" style="font-weight: 600">Application Deadline</span>
+                          <br>
+                          <span class="text2">Dec 5</span>
+                      </div>
+                  </div>
+                  <div class="col s12 row" style="margin-top: 10px; margin-bottom: 0;">
+                    <div class="col s6 left-align">
+                      <span class="jobtype">Internship</span>
+                    </div>
+                    <div class="col s6 right-align">
+                      <a href="">View Details <i class="material-icons right">arrow_forward</i></a>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          </div>
+        
         </div>
     </div>
 </main>
