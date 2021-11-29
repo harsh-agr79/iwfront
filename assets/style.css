@@ -42,7 +42,7 @@ body {
   overflow-x: hidden;
 }
 footer{
-  margin-top: 10vh;
+  margin-top: 5vh;
 }
 .flexcontainer::-webkit-scrollbar {
       width: 10px;
