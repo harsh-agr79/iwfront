@@ -12,4 +12,7 @@ body{
 .notif{
     color:var(--skin-color);
 }
+.theme{
+    background: var(--skin-color);
+}
 /* navbar end */
