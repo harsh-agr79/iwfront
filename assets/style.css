@@ -41,6 +41,9 @@ body {
   flex-direction: row;
   overflow-x: hidden;
 }
+footer{
+  margin-top: 10vh;
+}
 .flexcontainer::-webkit-scrollbar {
       width: 10px;
       height: 7px;
@@ -110,6 +113,13 @@ body {
 .cmpimg{
   height: 40px;
 }
+.detpg{
+  margin-top: 5vh;
+  background: white;
+  padding: 10px;
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 10px;
+}
 @media only screen and (max-width : 992px) {
   .title{
     font-size: 20px;
@@ -126,6 +136,19 @@ body {
   }
   .companyname{
     font-size: 15px;
+  }
+  .detpg{
+    margin-top: 0;
+    border-radius: 0;
+    border: none;
+    background: white;
+    padding: 10px;
+  }
+  .detpgch{
+    margin-top: 10vh;
+  }
+  footer{
+    margin-top: 0;
   }
 }
 @media only screen and (max-width : 300px) {
@@ -171,13 +194,7 @@ body {
 .sticky + .content {
   padding-top: 102px;
 }
-.detpg{
-  margin-top: 5vh;
-  background: white;
-  padding: 10px;
-  border: 1px solid rgb(192, 192, 192);
-  border-radius: 10px;
-}
+
 .activity{
   border: 1px solid rgb(192, 192, 192);
   border-radius: 10px;
