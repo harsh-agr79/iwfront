@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito Sans');
 :root{
     --skin-color: #006994;
     --mainBgColor: rgb(238, 238, 238);
@@ -7,8 +6,14 @@
     --mainGrey: #666666;
 }
 body{
-    font-family: 'Nunito', sans-serif;
+    font-family: sans-serif;
     background:var(--mainBgColor);
+}
+.section-card{
+    width:100%;
+    background:#fff;
+    box-shadow:var(--boxShadow);
+    border-radius:10px;
 }
 /* navbar start */
 .notif{
@@ -33,18 +38,15 @@ body{
 }
 @media(max-width:768px){
     .main-content{
-        width:95vw;
+        width:90vw;
         grid-template-columns: 1fr;
-        margin:1rem auto;
+        margin:1.4rem auto;
+    }
+    .profile-sidebar{
+        grid-column: span 3;
     }
 }
 /* profile info start */
-.profile-info{
-    width:100%;
-    background:#fff;
-    box-shadow:var(--boxShadow);
-    border-radius:10px;
-}
 .img-container{
     height:60%;
 }
@@ -104,6 +106,7 @@ body{
     font-size:1.5rem;
     text-transform:capitalize;
     text-align:left;
+    font-weight:700;
 }
 .avatar-title .location{
     color:var(--mainGrey);
@@ -132,10 +135,11 @@ body{
     font-size:2rem;
     text-transform: capitalize;
 }
-.modal-content div.divider{
+div.divider{
     height:2px;
     width:98%;
     background:var(--skin-color);
+    margin:0 auto;
 }
 .modal-content h6{
     font-size:1.2rem;
@@ -183,12 +187,11 @@ body{
 /* profile info end */
 
 /* profile sidebar start */
+.profile-sidebar{
+    display:block;
+}
 .profile-editor{
     display:block;
-    width:100%;
-    background:#fff;
-    box-shadow:var(--boxShadow);
-    border-radius:10px;
     padding:0.5rem 0.7rem;
     display:flex;
     justify-content: space-between;
@@ -202,6 +205,72 @@ body{
 }
 .profile-editor i{
     color:var(--mainGrey);
+}
+.featured-employers{
+    padding-bottom:1rem;
+}
+.featured-employers h5{
+    font-size:1.1rem;
+    padding:1rem;
+    font-weight:500;
+}
+.company-connect{
+    display:flex;
+    align-items: flex-start;
+    column-gap: 1.4rem;
+    margin:1rem 1.2rem;
+}
+.company-connect .company-logo{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+}
+.company-connect .company-connect-data{
+    margin:-1.1rem 0 0 -1.1rem;
+}
+.company-connect .company-connect-data h6{
+    font-size:1.1rem;
+    font-weight:600;
+    text-transform: capitalize;
+}
+.company-connect .company-connect-data .connect-location{
+    margin-top:-10px;
+    color:var(--mainGrey);
+}
+.company-connect .company-connect-data .connect-btn{
+    background: transparent;
+    border:1px solid var(--mainGrey);
+    border-radius:100px;
+    padding:0.3rem 0.6rem;
+    outline:none;
+    cursor:pointer;
+    transition:0.3s;
+}
+.company-connect .company-connect-data .connect-btn:hover{
+    border:2px solid var(--mainGrey);
+}
+.featured-employers .divider{
+    width:90%;
+}
+@media (max-width:768px){
+    .company-connect{
+        column-gap: 3rem;
+    }
+    .company-connect .company-connect-data{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0 0;
+        position:relative;
+        right:0;
+    }
+    .company-connect .company-connect-data .detail-container{
+        grid-column: 1 / 3;
+    }
+    .company-connect .company-connect-data .connect-btn{
+        height:50%;
+    }
 }
 /* profile sidebar end */
 /* main content end */
