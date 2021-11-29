@@ -23,6 +23,11 @@ $(document).ready(function(){
   $(document).ready(function(){
     $('select').formSelect();
   });
+
+  // $(document).ready(function(){
+  //   $('.fixed-action-btn').floatingActionButton();
+  // });
+
   var slider = document.getElementById('test-slider');
   noUiSlider.create(slider, {
    start: [0, 100000],

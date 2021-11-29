@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Nunito Sans', sans-serif;
+    background: rgb(238, 238, 238);
 }
 .theme{
     background: #006994;
@@ -85,7 +86,8 @@ body {
   /* width: 50%; */
   padding: 5px;
   border-radius: 20px;
-  margin-right: 20px;
+  /* margin-right: 20px; */
+  background: white;
 }
 .title{
   font-size: 25px;
@@ -101,6 +103,9 @@ body {
   border-radius: 20px;
   background: rgb(218, 218, 218);
 }
+.cmpimg{
+  height: 40px;
+}
 @media only screen and (max-width : 992px) {
   .title{
     font-size: 20px;
@@ -115,8 +120,35 @@ body {
     padding: 5px;
     margin-top: 10px;
   }
-  .companynam{
+  .companyname{
     font-size: 15px;
+  }
+}
+@media only screen and (max-width : 300px) {
+  .title{
+    font-size: 15px;
+  }
+  .text{
+    font-size: 10px;
+  }
+  .text2{
+    font-size: 7px;
+  }
+  .jobbox{
+    padding: 3px;
+    margin-top: 5px;
+  }
+  .companyname{
+    font-size: 13px;
+  }
+  .cmpimg{
+    height: 30px;
+  }
+}
+@media only screen and (min-width : 1280px) {
+  .self-contain{
+    margin-left: 15vw;
+    margin-right: 15vw;
   }
 }
 #sortsec{
