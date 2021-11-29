@@ -207,3 +207,8 @@ pre {
   white-space: -o-pre-wrap;
   word-wrap: break-word;
 }
+.inline-icon {
+  vertical-align: bottom;
+  margin-right: 0.5vw;
+  /* font-size: !important; */
+}
