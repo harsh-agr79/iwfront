@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito Sans');
+:root{
+    --skin-color: #006994;
+    --mainBgColor: rgb(238, 238, 238);
+    --boxShadow: 7px 10px 12px #f0f0f000;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    background:var(--mainBgColor);
+}
+/* navbar start */
+.notif{
+    color:var(--skin-color);
+}
+/* navbar end */
