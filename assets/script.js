@@ -28,7 +28,22 @@ $(document).ready(function(){
   //   $('.fixed-action-btn').floatingActionButton();
   // });
 
-  var slider = document.getElementById('test-slider');
+  var slider = document.getElementById('salary-slider');
+  noUiSlider.create(slider, {
+   start: [0, 100000],
+   connect: true,
+   step: 1000,
+   tooltips:true,
+   orientation: 'horizontal', // 'horizontal' or 'vertical'
+   range: {
+     'min': 0,
+     'max': 100000
+   },
+   format: wNumb({
+     decimals: 0
+   })
+  });
+  var slider = document.getElementById('salary-slider2');
   noUiSlider.create(slider, {
    start: [0, 100000],
    connect: true,
