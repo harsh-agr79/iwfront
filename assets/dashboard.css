@@ -296,7 +296,7 @@ div.divider{
 /* recent job end */
 
 /* profile sidebar start */
-.profile-editor a{
+.job-poster a{
     display:block;
     padding:0.5rem 0.7rem;
     display:flex;
@@ -304,12 +304,12 @@ div.divider{
     align-items: center;
     cursor:pointer;    
 }
-.profile-editor h5{
+.job-poster h5{
     font-size:1rem;
     text-align:left;
     color: var(--skin-color);
 }
-.profile-editor i{
+.job-poster i{
     color:var(--skin-color);
 }
 .featured-employers{
@@ -324,7 +324,7 @@ div.divider{
     display:flex;
     align-items: flex-start;
     column-gap: 1.4rem;
-    margin:1rem 1.2rem;
+    margin:0.7rem 1.2rem;
 }
 .company-connect .company-logo{
     width:50px;
@@ -343,20 +343,9 @@ div.divider{
     margin-top:-10px;
     color:var(--mainGrey);
 }
-.company-connect .company-connect-data .connect-btn{
-    background: transparent;
-    border:1px solid var(--mainGrey);
-    border-radius:100px;
-    padding:0.3rem 0.6rem;
-    outline:none;
-    cursor:pointer;
-    transition:0.3s;
-}
-.company-connect .company-connect-data .connect-btn:hover{
-    border:2px solid var(--mainGrey);
-}
 .featured-employers .divider{
     width:90%;
+    height:1px;
 }
 @media (max-width:768px){
     .profile-sidebar{
