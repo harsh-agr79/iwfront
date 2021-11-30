@@ -108,8 +108,6 @@ body{
     border-radius:50%;
     background:#fff;
     box-shadow:var(--insetShadow);
-    margin:0 50%;
-    transform:translateX(-50%);
 }
 .avatar-title{
     margin-top:-1rem;
@@ -197,6 +195,10 @@ div.divider{
     }
     .cover-pic{
         border-radius:0px;
+    }
+    .avatar-img{
+        margin:0 50%;
+        transform:translateX(-50%);
     }
 }
 /* profile info end */
