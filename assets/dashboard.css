@@ -227,9 +227,10 @@ div.divider{
     font-size:2.2rem;
     color:var(--skin-color);
 }
-.article-count .article-col h6{
+.article-count .article-col a{
     text-transform: capitalize;
     cursor: pointer;
+    color:black;
 }
 .article-count .article-col h6:hover{
     color:var(--skin-color);
