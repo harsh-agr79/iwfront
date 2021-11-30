@@ -290,10 +290,10 @@ div.divider{
 .profile-editor h5{
     font-size:1rem;
     text-align:left;
-    color: var(--mainGrey);
+    color: var(--skin-color);
 }
 .profile-editor i{
-    color:var(--mainGrey);
+    color:var(--skin-color);
 }
 .featured-employers{
     padding-bottom:1rem;
