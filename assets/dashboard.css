@@ -46,6 +46,9 @@ body{
         grid-template-columns: 1fr;
         margin:0 auto;
     }
+    .profile-dashboard{
+        grid-row-gap: 1rem;
+    }
     .profile-sidebar{
         grid-column: span 3;
     }
