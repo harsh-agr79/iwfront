@@ -34,7 +34,9 @@ body{
     grid-row-gap:0.7rem;
 }
 .profile-dashboard{
+    display:grid;
     grid-column: 1 / 4;
+    grid-row-gap:0.7rem;
 }
 @media(max-width:768px){
     .main-content{
@@ -185,6 +187,22 @@ div.divider{
     }
 }
 /* profile info end */
+
+/* your dashboard section start */
+.user-dashboard-section{
+    background:var(--skin-color);
+    color:#fff;
+    padding: 1rem;
+}
+.user-dashboard-section h1{
+    font-size:2rem;
+    display:inline;
+}
+.user-dashboard-section p{
+    margin:-0.5rem 0.5rem;
+    font-style:italic;
+}
+/* your dashboard section end */
 
 /* profile sidebar start */
 .profile-sidebar{
