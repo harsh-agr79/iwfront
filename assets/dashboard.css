@@ -8,6 +8,7 @@
 body{
     font-family: sans-serif;
     background:var(--mainBgColor);
+    overflow-x: hidden;
 }
 .section-card{
     width:100%;
@@ -41,12 +42,18 @@ body{
 }
 @media(max-width:768px){
     .main-content{
-        width:90vw;
+        width:100vw;
         grid-template-columns: 1fr;
-        margin:1.4rem auto;
+        margin:0 auto;
     }
     .profile-sidebar{
         grid-column: span 3;
+    }
+    .section-card{
+        width:100%;
+        background:#fff;
+        box-shadow:var(--boxShadow);
+        border-radius:0px;
     }
 }
 /* profile info start */
@@ -186,6 +193,9 @@ div.divider{
     .modal{
         width:80%;
     }
+    .cover-pic{
+        border-radius:0px;
+    }
 }
 /* profile info end */
 
@@ -279,7 +289,7 @@ div.divider{
 /* recent job end */
 
 /* profile sidebar start */
-.profile-editor{
+.profile-editor a{
     display:block;
     padding:0.5rem 0.7rem;
     display:flex;
