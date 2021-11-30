@@ -17,9 +17,6 @@ body{
     border-radius:10px;
 }
 /* navbar start */
-nav{
-    width:100vw;
-}
 .notif{
     color:var(--skin-color);
 }
