@@ -98,7 +98,7 @@ body{
 }
 .avatar-pic{
     position:relative;
-    display:inline-block;
+    display:block;
     margin:-6rem 1rem 1rem;
 }
 .avatar-img{
@@ -108,6 +108,8 @@ body{
     border-radius:50%;
     background:#fff;
     box-shadow:var(--insetShadow);
+    margin:0 50%;
+    transform:translateX(-50%);
 }
 .avatar-title{
     margin-top:-1rem;
