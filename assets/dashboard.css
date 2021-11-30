@@ -32,6 +32,7 @@ body{
     grid-template-columns:repeat(4, 1fr);
     grid-column-gap:0.7rem;
     grid-row-gap:0.7rem;
+    position:relative;
 }
 .profile-dashboard{
     display:grid;
@@ -231,16 +232,35 @@ div.divider{
     cursor: pointer;
     color:black;
 }
-.article-count .article-col h6:hover{
+.article-count .article-col a:hover{
     color:var(--skin-color);
     text-decoration: underline;
 }
 /* your dashboard section end */
 
-/* profile sidebar start */
-.profile-sidebar{
-    display:block;
+/* overview start */
+.overview-section{
+    padding: 0 1.5rem;
 }
+.overview-section h3{
+    font-size:1.3rem;
+    font-weight:600;
+}
+.overview-section .extra-overview h6{
+    font-size:1rem;
+    font-weight:600
+}
+.overview-section .extra-overview a{
+    text-decoration: none;
+    color:var(--skin-color);
+}
+.overview-section .extra-overview p{
+    font-size:0.9rem;
+    text-transform: capitalize;
+}
+/* overview end */
+
+/* profile sidebar start */
 .profile-editor{
     display:block;
     padding:0.5rem 0.7rem;
@@ -304,6 +324,9 @@ div.divider{
     width:90%;
 }
 @media (max-width:768px){
+    .profile-sidebar{
+        display:none;
+    }
     .company-connect{
         column-gap: 3rem;
     }
