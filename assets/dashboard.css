@@ -379,7 +379,7 @@ div.divider{
 
 /* Tab Menu Start */
 .dashboard-tabs{
-    padding:0.5rem 1rem;
+    padding:0.5rem 0;
     margin:0.7rem 0;
 }
 .dashboard-tabs .tab-menu{
@@ -388,9 +388,15 @@ div.divider{
     color:var(--skin-color);
     text-decoration: none;
     text-transform: capitalize;
+    padding-left:0.5rem;
 }
 .dashboard-tabs .tab-menu i{
     margin-right:1.5rem;
+}
+.dashboard-tabs .divider{
+    height:1px;
+    width:100%;
+    background:grey;
 }
 /* Tab Menu End */
 /* profile sidebar end */
