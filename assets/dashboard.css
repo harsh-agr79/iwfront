@@ -35,7 +35,8 @@ body{
     grid-row-gap:0.7rem;
     position:relative;
 }
-.profile-dashboard{
+.profile-dashboard,
+.left-section{
     display:grid;
     grid-column: 1 / 4;
     grid-row-gap:0.7rem;
@@ -200,7 +201,8 @@ div.divider{
         border-radius:0px;
     }
     .avatar-img{
-        margin:0 50%;
+        position:relative;
+        left:50%;
         transform:translateX(-50%);
     }
 }
@@ -296,6 +298,9 @@ div.divider{
 /* recent job end */
 
 /* profile sidebar start */
+.profile-sidebar{
+    grid-row-gap:0.7rem;
+}
 .job-poster a{
     display:block;
     padding:0.5rem 0.7rem;
@@ -312,7 +317,8 @@ div.divider{
 .job-poster i{
     color:var(--skin-color);
 }
-.featured-employers{
+.featured-employers,
+.dashboard-tabs{
     padding-bottom:1rem;
 }
 .featured-employers h5{
@@ -370,5 +376,28 @@ div.divider{
         height:50%;
     }
 }
+
+/* Tab Menu Start */
+.dashboard-tabs{
+    padding:0.5rem 0;
+    margin:0.7rem 0;
+}
+.dashboard-tabs .tab-menu{
+    display:flex;
+    align-items: center;
+    color:var(--skin-color);
+    text-decoration: none;
+    text-transform: capitalize;
+    padding-left:0.5rem;
+}
+.dashboard-tabs .tab-menu i{
+    margin-right:1.5rem;
+}
+.dashboard-tabs .divider{
+    height:1px;
+    width:100%;
+    background:grey;
+}
+/* Tab Menu End */
 /* profile sidebar end */
 /* main content end */
