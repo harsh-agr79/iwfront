@@ -396,7 +396,7 @@ div.divider{
 .dashboard-tabs .divider{
     height:1px;
     width:100%;
-    background:grey;
+    background:rgb(236, 236, 236);
 }
 /* Tab Menu End */
 
