@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../assets/dashboard.css">
-    <link rel="stylesheet" href="../assets/style.css">
     <link rel="icon" href="../assets/images/title.png">
     <title>Internwheel | Post a Job</title>
 </head>
@@ -61,7 +60,34 @@
 
         <div class="main-content">
             <section class="left-section">
-                post a job
+                <div class="job-upload-form section-card">
+                    <form>
+                        <h1>Post a new job</h1>
+                        <div class="divider"></div>
+                        <div class="job-form-field">
+                            <input type="text" name="job-title" id="job-title" required>
+                            <label for="job-title">Job Title*</label>
+                        </div>
+                        <div class="job-form-field">
+                            <label for="job-desc" class="area-label">Job Description*</label>
+                            <textarea name="job-desc" id="job-desc" required></textarea>
+                        </div>
+                        <div class="single-row-form">
+                            <div class="job-form-field">
+                                <input type="datetime-local" name="application-deadline" id="application-deadline" min="2021-12-01T10:26" placeholder="" required>
+                                <label for="application-deadline">Appication Deadline*</label>
+                            </div>
+                            <div class="job-form-field">
+                                <input type="text" name="job-title" id="job-title" required>
+                                <label for="job-title">Job Title*</label>
+                            </div>
+                            <div class="job-form-field">
+                                <input type="text" name="job-title" id="job-title" required>
+                                <label for="job-title">Job Title*</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </section>
             <section class="profile-sidebar">
                 <div class="job-poster section-card">

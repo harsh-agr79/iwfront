@@ -399,5 +399,77 @@ div.divider{
     background:grey;
 }
 /* Tab Menu End */
+
+/* New Job Poster start */
+.job-upload-form form{
+    padding:1rem;
+}
+.job-upload-form form h1{
+    font-size:1.6rem;
+    display:inline;
+    padding: 0.5rem;
+    line-height:2;
+    font-weight:500;
+    text-transform:capitalize;
+}
+.job-upload-form form .job-form-field{
+    padding:0.5rem;
+    position:relative;
+}
+.job-upload-form form .job-form-field label{
+    font-size:1rem;
+    color:black;
+    position:absolute;
+    bottom:20px;
+    left:10px;
+    transition:0.3s;
+    user-select:none;
+    transition:0.3s;
+}
+.job-upload-form form .job-form-field .area-label{
+    position:static;
+}
+.job-upload-form form .job-form-field textarea{
+    border:none;
+    width:100%;
+    border-bottom:1px solid grey;
+    outline:none;
+    padding-bottom:0;
+    resize:vertical;
+}
+.job-upload-form form .job-form-field input:focus{
+    border-bottom:1px solid var(--skin-color)!important;
+}
+.job-upload-form form .job-form-field input:focus ~ label,
+.job-upload-form form .job-form-field input:valid ~ label,
+.job-upload-form form .job-form-field textarea:focus ~ label,
+.job-upload-form form .job-form-field textarea:valid ~ label{
+    color:var(--skin-color)!important;
+    transform:translateY(-28px);
+    font-size:0.8rem;
+}
+.job-upload-form form .job-form-field textarea:focus ~ label,
+.job-upload-form form .job-form-field textarea:valid ~ label{
+    transform:translateY(-35px);
+}
+.single-row-form{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+}
+input[type=datetime-local]:required:invalid::-webkit-datetime-edit {
+    color: transparent;
+}
+input[type=datetime-local]:focus::-webkit-datetime-edit {
+    color: black !important;
+}
+
+@media(max-width:768px){
+    .job-upload-form{
+        margin:1rem;
+        width:90%;
+        border-radius: 10px;
+    }
+}
+/* New Job Poster end */
 /* profile sidebar end */
 /* main content end */
