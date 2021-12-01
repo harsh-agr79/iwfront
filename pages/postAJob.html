@@ -74,16 +74,27 @@
                         </div>
                         <div class="single-row-form">
                             <div class="job-form-field">
-                                <input type="datetime-local" name="application-deadline" id="application-deadline" min="2021-12-01T10:26" placeholder="" required>
+                                <input type="datetime-local" name="application-deadline" id="application-deadline" min="" max="" placeholder="" required>
                                 <label for="application-deadline">Appication Deadline*</label>
                             </div>
                             <div class="job-form-field">
-                                <input type="text" name="job-title" id="job-title" required>
-                                <label for="job-title">Job Title*</label>
+                                <select name="job-sector" id="job-sector" required>
+                                    <option value="Accounting">Accounting</option>
+                                    <option value="Programming">Programming</option>
+                                    <option value="Marketing">Marketing</option>
+                                    <option value="Food & Restaurant">Food & Restaurant</option>
+                                    <option value="Communication">Communication</option>
+                                </select>
+                                <label for="job-sector" class="select-label">Job Sector*</label>
                             </div>
                             <div class="job-form-field">
-                                <input type="text" name="job-title" id="job-title" required>
-                                <label for="job-title">Job Title*</label>
+                                <select name="job-type" id="job-type" required>
+                                    <option value="Fresher">Fresher</option>
+                                    <option value="Internship">Internship</option>
+                                    <option value="Part Time">Part Time</option>
+                                    <option value="Full Time">Full Time</option>
+                                </select>
+                                <label for="job-type" class="select-label">Job Type*</label>
                             </div>
                         </div>
                     </form>
@@ -219,6 +230,8 @@
             </div>
         </footer>
     </div>
->>>>>>> e4a1a976adf4236298c07b26b00dc26a583e6183
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="../assets/dashboard.js"></script>
 </html>

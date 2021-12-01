@@ -449,8 +449,9 @@ div.divider{
     font-size:0.8rem;
 }
 .job-upload-form form .job-form-field textarea:focus ~ label,
-.job-upload-form form .job-form-field textarea:valid ~ label{
-    transform:translateY(-35px);
+.job-upload-form form .job-form-field textarea:valid ~ label,
+.select-label{
+    transform:translateY(-38px);
 }
 .single-row-form{
     display:grid;
@@ -462,7 +463,15 @@ input[type=datetime-local]:required:invalid::-webkit-datetime-edit {
 input[type=datetime-local]:focus::-webkit-datetime-edit {
     color: black !important;
 }
-
+select{
+    display:block;
+    outline:none;
+    border:none;
+    border-bottom:1px solid var(--mainGrey);
+}
+select:focus{
+    border:none;
+}
 @media(max-width:768px){
     .job-upload-form{
         margin:1rem;
@@ -470,6 +479,14 @@ input[type=datetime-local]:focus::-webkit-datetime-edit {
         border-radius: 10px;
     }
 }
-/* New Job Poster end */
+@media(max-width:1200px){
+    .select-label{
+        transform:translateY(-30px);
+    }
+}@media(max-width:832px){
+    .select-label{
+        transform:translateY(-25px);
+    }
+}/* New Job Poster end */
 /* profile sidebar end */
 /* main content end */
