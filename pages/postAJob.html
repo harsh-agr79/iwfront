@@ -97,6 +97,43 @@
                                 <label for="job-type" class="select-label">Job Type*</label>
                             </div>
                         </div>
+                        <div class="job-form-field">
+                            <label for="skills" class="no-effect-label">Skills*</label>
+                            <div class="chips chips-autocomplete" id="skills"></div>
+                        </div>
+                        <label>
+                            <input type="checkbox" name="work-based-stipend" value="Work Based" />
+                            <span>Work Based Salary</span>
+                        </label>
+                        <div class="salary-div">
+                            <div class="job-form-field">
+                                <input type="number" name="min-salary" id="min-salary" required>
+                                <label for="min-salary">min salary*</label>
+                            </div>
+                            <div class="job-form-field">
+                                <input type="number" name="max-salary" id="max-salary" required>
+                                <label for="max-salary">max salary*</label>
+                            </div>
+                        </div>
+                        <h1>Other Information</h1>
+                        <div class="divider"></div>
+                        <div class="qualification-div">
+                            <div class="job-form-field">
+                                <input type="text" name="qualification" id="qualification" required>
+                                <label for="qualification">qualification*</label>
+                            </div>
+                            <div class="job-form-field">
+                                <select name="experience" id="experience" required>
+                                    <option value="Fresher">Fresher</option>
+                                    <option value="1year">1 Year</option>
+                                    <option value="2years">2 Years</option>
+                                    <option value="3years">3 Years</option>
+                                    <option value="4years">4 Years</option>
+                                    <option value="4+years">4+ Years</option>
+                                </select>
+                                <label for="experience" class="select-label">experience*</label>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </section>

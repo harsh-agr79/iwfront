@@ -425,6 +425,7 @@ div.divider{
     transition:0.3s;
     user-select:none;
     transition:0.3s;
+    text-transform: capitalize;
 }
 .job-upload-form form .job-form-field .area-label{
     position:static;
@@ -436,6 +437,11 @@ div.divider{
     outline:none;
     padding-bottom:0;
     resize:vertical;
+}
+.no-effect-label{
+    transform:translateY(0);
+    position:static;
+    top:0;
 }
 .job-upload-form form .job-form-field input:focus{
     border-bottom:1px solid var(--skin-color)!important;
@@ -453,6 +459,7 @@ div.divider{
 .select-label{
     transform:translateY(-38px);
 }
+
 .single-row-form{
     display:grid;
     grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
@@ -472,6 +479,19 @@ select{
 select:focus{
     border:none;
 }
+.salary-div{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+}
+.qualification-div{
+    padding-top:20px;
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+}
+input[type="checkbox"] ~ span{
+    color:black;
+    display:inline
+}
 @media(max-width:768px){
     .job-upload-form{
         margin:1rem;
@@ -487,6 +507,7 @@ select:focus{
     .select-label{
         transform:translateY(-25px);
     }
-}/* New Job Poster end */
+}
+/* New Job Poster end */
 /* profile sidebar end */
 /* main content end */
