@@ -419,24 +419,22 @@ div.divider{
 .job-upload-form form .job-form-field label{
     font-size:1rem;
     color:black;
-    position:absolute;
-    bottom:20px;
-    left:10px;
-    transition:0.3s;
     user-select:none;
-    transition:0.3s;
     text-transform: capitalize;
 }
-.job-upload-form form .job-form-field .area-label{
-    position:static;
-}
+.job-upload-form form .job-form-field input,
+.job-upload-form form .job-form-field select,
 .job-upload-form form .job-form-field textarea{
-    border:none;
+    border:1px solid grey;
     width:100%;
-    border-bottom:1px solid grey;
+    border-radius:10px;
     outline:none;
     padding-bottom:0;
     resize:vertical;
+}
+.chips{
+    border:none;
+    outline:none;
 }
 .no-effect-label{
     transform:translateY(0);
@@ -446,23 +444,20 @@ div.divider{
 .job-upload-form form .job-form-field input:focus{
     border-bottom:1px solid var(--skin-color)!important;
 }
-.job-upload-form form .job-form-field input:focus ~ label,
-.job-upload-form form .job-form-field input:valid ~ label,
-.job-upload-form form .job-form-field textarea:focus ~ label,
-.job-upload-form form .job-form-field textarea:valid ~ label{
-    color:var(--skin-color)!important;
-    transform:translateY(-28px);
-    font-size:0.8rem;
+.select-field{
+    position:absolute;
+    bottom:-24px;
+    left:10px;
+    transition:0.3s;
 }
-.job-upload-form form .job-form-field textarea:focus ~ label,
-.job-upload-form form .job-form-field textarea:valid ~ label,
 .select-label{
-    transform:translateY(-38px);
+    transform:translateY(-24px);
 }
 
 .single-row-form{
     display:grid;
     grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    grid-row-gap:1.2rem;
 }
 input[type=datetime-local]:required:invalid::-webkit-datetime-edit {
     color: transparent;
@@ -482,15 +477,35 @@ select:focus{
 .salary-div{
     display:grid;
     grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+    transition:0.3s;
 }
 .qualification-div{
     padding-top:20px;
     display:grid;
     grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+    grid-row-gap:1.2rem;
 }
 input[type="checkbox"] ~ span{
     color:black;
     display:inline
+}
+.check{
+    display:block;
+}
+.hide-block{
+    transition:0.3s;
+    display:none;
+}
+.submit-btn{
+    background-color:var(--skin-color);
+}
+@media(max-width:586px){
+    .sector-field{
+        transform: translateY(-30px);
+    }
+    .type-field{
+        transform:translateY(20px);
+    }
 }
 @media(max-width:768px){
     .job-upload-form{
@@ -498,14 +513,35 @@ input[type="checkbox"] ~ span{
         width:90%;
         border-radius: 10px;
     }
+    .select-field{
+        position:static;
+        top:0;
+        left:0;
+        transition:0.3s;
+    }
+    .sector-field{
+        transform:translateY(20px);
+    }
+    .select-label{
+        transform:translateY(10px);
+    }
 }
 @media(max-width:1200px){
     .select-label{
         transform:translateY(-30px);
     }
+    .single-row-form{
+        grid-row-gap:0.7rem;
+    }
+    .skill-field{
+        transform:translateY(20px);
+    }
+    .submit-btn{
+        margin-top:2rem;
+    }
 }@media(max-width:832px){
     .select-label{
-        transform:translateY(-25px);
+        transform:translateY(-18px);
     }
 }
 /* New Job Poster end */

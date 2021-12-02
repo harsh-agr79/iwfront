@@ -66,4 +66,18 @@ $(document).ready(function(){
           minLength: 1
         }
     });
+
+    //salary post
+    var salaryDiv = document.querySelector('.salary-div')
+
+    $('#work-based-stipend').change(() => {
+        if($('.salary-field').attr('required')){
+            $('.salary-field').removeAttr('required')
+            salaryDiv.classList.add('hide-block')
+        }
+        else{
+            $('.salary-field').attr('required','required')
+            salaryDiv.classList.remove('hide-block')
+        }
+    })
 });

@@ -65,19 +65,20 @@
                         <h1>Post a new job</h1>
                         <div class="divider"></div>
                         <div class="job-form-field">
+                            <label for="job-title">Job Title </label>
                             <input type="text" name="job-title" id="job-title" required>
-                            <label for="job-title">Job Title*</label>
                         </div>
                         <div class="job-form-field">
-                            <label for="job-desc" class="area-label">Job Description*</label>
+                            <label for="job-desc" class="area-label">Job Description </label>
                             <textarea name="job-desc" id="job-desc" required></textarea>
                         </div>
                         <div class="single-row-form">
                             <div class="job-form-field">
+                                <label for="application-deadline">Appication Deadline </label>
                                 <input type="datetime-local" name="application-deadline" id="application-deadline" min="" max="" placeholder="" required>
-                                <label for="application-deadline">Appication Deadline*</label>
                             </div>
-                            <div class="job-form-field">
+                            <div class="job-form-field select-field sector-field">
+                                <label for="job-sector" class="select-label">Job Sector </label>
                                 <select name="job-sector" id="job-sector" required>
                                     <option value="Accounting">Accounting</option>
                                     <option value="Programming">Programming</option>
@@ -85,44 +86,44 @@
                                     <option value="Food & Restaurant">Food & Restaurant</option>
                                     <option value="Communication">Communication</option>
                                 </select>
-                                <label for="job-sector" class="select-label">Job Sector*</label>
                             </div>
-                            <div class="job-form-field">
+                            <div class="job-form-field select-field type-field">
+                                <label for="job-type" class="select-label">Job Type </label>
                                 <select name="job-type" id="job-type" required>
                                     <option value="Fresher">Fresher</option>
                                     <option value="Internship">Internship</option>
                                     <option value="Part Time">Part Time</option>
                                     <option value="Full Time">Full Time</option>
                                 </select>
-                                <label for="job-type" class="select-label">Job Type*</label>
                             </div>
                         </div>
-                        <div class="job-form-field">
-                            <label for="skills" class="no-effect-label">Skills*</label>
+                        <div class="job-form-field skill-field">
+                            <label for="skills" class="skill-label">Skills </label>
                             <div class="chips chips-autocomplete" id="skills"></div>
                         </div>
-                        <label>
-                            <input type="checkbox" name="work-based-stipend" value="Work Based" />
+                        <label class="check">
+                            <input type="checkbox" name="work-based-stipend" value="Work Based" id="work-based-stipend" />
                             <span>Work Based Salary</span>
                         </label>
                         <div class="salary-div">
                             <div class="job-form-field">
-                                <input type="number" name="min-salary" id="min-salary" required>
-                                <label for="min-salary">min salary*</label>
+                                <label for="min-salary">min salary </label>
+                                <input type="number" name="min-salary" id="min-salary" class="salary-field" required>
                             </div>
                             <div class="job-form-field">
-                                <input type="number" name="max-salary" id="max-salary" required>
-                                <label for="max-salary">max salary*</label>
+                                <label for="max-salary">max salary </label>
+                                <input type="number" name="max-salary" id="max-salary" class="salary-field" required>
                             </div>
                         </div>
                         <h1>Other Information</h1>
                         <div class="divider"></div>
                         <div class="qualification-div">
                             <div class="job-form-field">
+                                <label for="qualification">qualification </label>
                                 <input type="text" name="qualification" id="qualification" required>
-                                <label for="qualification">qualification*</label>
                             </div>
-                            <div class="job-form-field">
+                            <div class="job-form-field select-field">
+                                <label for="experience" class="select-label">experience </label>
                                 <select name="experience" id="experience" required>
                                     <option value="Fresher">Fresher</option>
                                     <option value="1year">1 Year</option>
@@ -131,9 +132,9 @@
                                     <option value="4years">4 Years</option>
                                     <option value="4+years">4+ Years</option>
                                 </select>
-                                <label for="experience" class="select-label">experience*</label>
                             </div>
                         </div>
+                        <button type="submit" class="btn submit-btn">Post</button>
                     </form>
                 </div>
             </section>
