@@ -412,6 +412,9 @@ div.divider{
     font-weight:500;
     text-transform:capitalize;
 }
+.exp-field{
+    margin-right:10px;
+}
 .job-upload-form form .job-form-field{
     padding:0.5rem;
     position:relative;
@@ -444,6 +447,9 @@ div.divider{
 .job-upload-form form .job-form-field input:focus{
     border-bottom:1px solid var(--skin-color)!important;
 }
+.file-field{
+    padding-top:15px;
+}
 .select-field{
     position:absolute;
     bottom:-24px;
@@ -453,7 +459,11 @@ div.divider{
 .select-label{
     transform:translateY(-24px);
 }
-
+label span{
+    font-size:0.7rem;
+    color:var(--mainGrey);
+    font-style:italic;
+}
 .single-row-form{
     display:grid;
     grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
@@ -498,6 +508,8 @@ input[type="checkbox"] ~ span{
 }
 .submit-btn{
     background-color:var(--skin-color);
+    width:100%;
+    border-radius:20px;
 }
 @media(max-width:586px){
     .sector-field{
@@ -524,6 +536,12 @@ input[type="checkbox"] ~ span{
     }
     .select-label{
         transform:translateY(10px);
+    }
+    .file-field{
+        padding-top:0;
+    }
+    .exp-field{
+        margin-right:0;
     }
 }
 @media(max-width:1200px){
