@@ -511,6 +511,13 @@ input[type="checkbox"] ~ span{
     width:100%;
     border-radius:20px;
 }
+.file-field .btn{
+    background:var(--skin-color);
+    border-radius:10px;
+}
+.file-field .btn:hover{
+    background:rgb(10, 153, 153);
+}
 @media(max-width:586px){
     .sector-field{
         transform: translateY(-30px);
