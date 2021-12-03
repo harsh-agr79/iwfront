@@ -80,4 +80,17 @@ $(document).ready(function(){
             salaryDiv.classList.remove('hide-block')
         }
     })
+
+    // var submitHandle = (e) => {
+    //     e.preventDefault()
+    //     $('.job-upload-form form').attr('class','hide-form')
+    //     $('.confirmation-page').attr('class', 'show-page')
+    // }
+    const form = document.querySelector('.job-upload-form form')
+    const confirmationPage = document.querySelector('.confirmation-page')
+    form.addEventListener('submit',(e) => {
+        e.preventDefault()
+        form.classList.add('hide-block')
+        confirmationPage.classList.add('show-page')
+    })
 });
