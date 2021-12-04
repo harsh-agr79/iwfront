@@ -23,6 +23,10 @@ body{
 .theme{
     background: var(--skin-color);
 }
+.sidenav .divider{
+    background:#E0E0E0;
+    height:1px;
+}
 /* navbar end */
 
 /* main content start */
