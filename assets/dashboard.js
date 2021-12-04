@@ -81,11 +81,6 @@ $(document).ready(function(){
         }
     })
 
-    // var submitHandle = (e) => {
-    //     e.preventDefault()
-    //     $('.job-upload-form form').attr('class','hide-form')
-    //     $('.confirmation-page').attr('class', 'show-page')
-    // }
     const form = document.querySelector('.job-upload-form form')
     const confirmationPage = document.querySelector('.confirmation-page')
     form.addEventListener('submit',(e) => {
@@ -93,4 +88,16 @@ $(document).ready(function(){
         form.classList.add('hide-block')
         confirmationPage.classList.add('show-page')
     })
+
+    //bottom navbar
+    let bottomTab = document.querySelectorAll('.bottom-tab')
+    for(let i=0; i<bottomTab.length; i++){
+        bottomTab[i].onclick = function(){
+            let j = 0
+            while(j<bottomTab.length){
+                bottomTab[j++].className = 'bottom-tab'
+            }
+            bottomTab[i].className = 'bottom-tab active'
+        }
+    }
 });

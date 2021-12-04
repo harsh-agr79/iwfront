@@ -27,6 +27,43 @@ body{
     background:#E0E0E0;
     height:1px;
 }
+.bottom-nav{
+    background:white;
+    height:50px;
+    width:100%;
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    display:none;
+}
+.bottom-nav .bottom-tab{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-right:1px solid #e0e0e0;
+    color:var(--mainGrey);
+}
+.bottom-nav .bottom-tab i{
+    display:inline;
+    margin-top:7px;
+    margin-bottom:-18px;
+}
+.bottom-nav .bottom-tab.active{
+    color:black;
+    border-top:2px solid black;
+}
+.bottom-nav .final-tab{
+    border:none;
+}
+@media(max-width:768px){
+    .bottom-nav{
+        display:grid;
+    }
+}
 /* navbar end */
 
 /* main content start */
