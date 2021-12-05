@@ -445,10 +445,12 @@ div.divider{
 /* Tab Menu End */
 
 /* New Job Poster start */
-.job-upload-form form{
+.job-upload-form form,
+.settings-section{
     padding:1rem;
 }
-.job-upload-form form h1{
+.job-upload-form form h1,
+.settings-section h1{
     font-size:1.6rem;
     display:inline;
     padding: 0.5rem;
@@ -571,7 +573,8 @@ input[type="checkbox"] ~ span{
     }
 }
 @media(max-width:768px){
-    .job-upload-form{
+    .job-upload-form,
+    .settings-section{
         margin:1rem;
         width:90%;
         border-radius: 10px;
@@ -661,5 +664,41 @@ input[type="checkbox"] ~ span{
     display:block;
 }
 /* Post Confirmation End */
+
+/* Account Settings Start */
+.settings-item{
+    display:grid;
+    justify-content: center;
+    grid-template-columns: 5fr 1fr;
+    align-items: center;
+    margin-bottom:1rem;
+}
+.settings-item .item-title,
+.settings-item .current-data{
+    font-size:1.1rem;
+    padding: 0 1rem;
+    flex:0 0 50%;
+    font-weight:600;
+    line-height:0.1;
+}
+.settings-item i{
+    color:var(--skin-color);
+    cursor:pointer;
+    line-height:1.5;
+    grid-row:span 2;
+    display:block;
+}
+.settings-item .current-data{
+    font-weight:300;
+    font-size:0.8rem;
+    color:var(--mainGrey);
+    font-style:italic;
+}
+.deactivate-btn{
+    color:red!important;
+    display: inline;
+    cursor:pointer;
+}
+/* Account Settings End */
 /* profile sidebar end */
 /* main content end */
