@@ -693,7 +693,7 @@ input[type="checkbox"] ~ span{
     font-size:0.8rem;
     color:var(--mainGrey);
     font-style:italic;
-}
+}  
 .deactivate-btn{
     color:red!important;
     display: inline;

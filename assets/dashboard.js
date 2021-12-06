@@ -10,7 +10,7 @@ $(document).ready(function(){
     var minutes = today.getMinutes()
     var finalMonth = month + 3
     var finalYear = year
-    
+     
     if(finalMonth>12){
         finalMonth-=12
         finalYear = year + 1
