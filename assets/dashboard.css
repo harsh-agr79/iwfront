@@ -187,7 +187,7 @@ body{
 .modal{
     margin:10% auto;
     border-radius:10px;
-    width:30%;
+    width:50%;
 }
 .modal-content h4{
     font-size:2rem;
@@ -302,22 +302,27 @@ div.divider{
 /* your dashboard section end */
 
 /* overview start */
-.overview-section{
+.overview-section,
+.extra-info{
     padding: 0 1.5rem;
 }
-.overview-section h3{
+.overview-section h3,
+.exp-section h3{
     font-size:1.3rem;
     font-weight:600;
 }
-.overview-section .extra-overview h6{
+.overview-section .extra-overview h6,
+.extra-info .extra-overview h6{
     font-size:1rem;
     font-weight:600
 }
-.overview-section .extra-overview a{
+.overview-section .extra-overview a,
+.extra-info .extra-overview a{
     text-decoration: none;
     color:var(--skin-color);
 }
-.overview-section .extra-overview p{
+.overview-section .extra-overview p,
+.extra-info .extra-overview p{
     font-size:0.9rem;
     text-transform: capitalize;
 }
@@ -841,4 +846,55 @@ input[type="checkbox"] ~ span{
     }
 }
 /* Saved Candidates Start */
+
+/* User Dashboard start */
+.skill-list li{
+    font-size:1.2rem;
+    border-bottom: 1px solid var(--mainBgColor);
+    padding:1rem 0;
+}
+.view_more{
+    text-align:center;
+    display: block;
+    margin-bottom:1rem;
+    color:var(--skin-color);
+    cursor:pointer;
+}
+.exp-section{
+    padding:1rem;
+}
+.exp-section h3{
+    margin-bottom:2rem;
+}
+.exp-grid-section{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-row-gap:1.2rem;
+}
+.exp-item{
+    display:flex;
+    justify-content: flex-start;
+    margin-bottom:1.4rem;
+}
+.exp-item .ins-icon{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+}
+.exp-item .ins-info{
+    padding-left:1rem;
+}
+.exp-item .ins-info h5{
+    font-size:1rem;
+    font-weight:600;
+    margin:-0.7rem 0;
+}
+.exp-item .ins-info p{
+    font-size:0.9rem;
+    margin-bottom:-0.3rem;
+}
+.exp-item .ins-info span{
+    font-size:0.9rem;
+}
+/* User Dashboard end */
 /* main content end */
