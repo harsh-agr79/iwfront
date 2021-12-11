@@ -950,3 +950,18 @@ input[type="checkbox"] ~ span{
 }
 /* User Dashboard end */
 /* main content end */
+/* change post job */
+.inpfield{
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    border:1px solid rgb(172, 172, 172);
+}
+.inplbl{
+    font-weight: 700;
+    font-size: 13px;
+}
+.form-container
+{
+    margin: 10px;
+}

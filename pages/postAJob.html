@@ -101,105 +101,112 @@
 
         <div class="main-content">
             <section class="left-section">
-                <div class="job-upload-form section-card">
-                    <form>
-                        <h1>Post a new job</h1>
+                <div class="section-card">
+                   <form action="">
+                       <div class="row form-container">
+                        <h4>Post a new job</h4>
                         <div class="divider"></div>
-                        <div class="job-form-field">
-                            <label for="job-title">Job Title </label>
-                            <input type="text" name="job-title" id="job-title" required>
-                        </div>
-                        <div class="job-form-field">
-                            <label for="job-desc" class="area-label">Job Description </label>
-                            <textarea name="job-desc" id="job-desc" required></textarea>
-                        </div>
-                        <div class="single-row-form">
-                            <div class="job-form-field">
-                                <label for="application-deadline">Appication Deadline </label>
-                                <input type="datetime-local" name="application-deadline" id="application-deadline" min="" max="" placeholder="" required>
+                           <div class="col s12 inp-container">
+                               <label class="inplbl">Job title</label>
+                               <input type="text" placeholder="Job title" class="browser-default inpfield" name="title">
                             </div>
-                            <div class="job-form-field select-field sector-field">
-                                <label for="job-sector" class="select-label">Job Sector </label>
-                                <select name="job-sector" id="job-sector" required>
-                                    <option value="Accounting">Accounting</option>
-                                    <option value="Programming">Programming</option>
-                                    <option value="Marketing">Marketing</option>
-                                    <option value="Food & Restaurant">Food & Restaurant</option>
-                                    <option value="Communication">Communication</option>
-                                </select>
-                            </div>
-                            <div class="job-form-field select-field type-field">
-                                <label for="job-type" class="select-label">Job Type </label>
-                                <select name="job-type" id="job-type" required>
-                                    <option value="Fresher">Fresher</option>
-                                    <option value="Internship">Internship</option>
-                                    <option value="Part Time">Part Time</option>
-                                    <option value="Full Time">Full Time</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="job-form-field skill-field">
-                            <label for="skills" class="skill-label">Skills </label>
-                            <div class="chips chips-autocomplete" id="skills"></div>
-                        </div>
-                        <label class="check">
-                            <input type="checkbox" name="work-based-stipend" value="Work Based" id="work-based-stipend" />
-                            <span>Work Based Salary</span>
-                        </label>
-                        <div class="salary-div">
-                            <div class="job-form-field">
-                                <label for="min-salary">min salary </label>
-                                <input type="number" name="min-salary" id="min-salary" class="salary-field" required>
-                            </div>
-                            <div class="job-form-field">
-                                <label for="max-salary">max salary </label>
-                                <input type="number" name="max-salary" id="max-salary" class="salary-field" required>
-                            </div>
-                        </div>
-                        <h1>Other Information</h1>
-                        <div class="divider"></div>
-                        <div class="qualification-div">
-                            <div class="job-form-field">
-                                <label for="qualification">qualification </label>
-                                <input type="text" name="qualification" id="qualification" required>
-                            </div> 
-                            <div class="job-form-field select-field exp-field">
-                                <label for="experience" class="select-label">experience </label>
-                                <select name="experience" id="experience" required>
-                                    <option value="Fresher">Fresher</option>
-                                    <option value="1year">1 Year</option>
-                                    <option value="2years">2 Years</option>
-                                    <option value="3years">3 Years</option>
-                                    <option value="4years">4 Years</option>
-                                    <option value="4+years">4+ Years</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="job-form-field branch-field" style="margin-top:10px;">
-                            <label for="branches" class="select-label">Branch </label>
-                            <select name="branches" id="branches" required>
-                                <option value="Bagbazaar, Kathmandu">Bagbazaar, Kathmandu</option>
-                                <option value="Balkumari, Lalitpur">Balkumari, Lalitpur</option>
-                                <option value="Buddhanagar, Kathmandu">Buddhanagar, Kathmandu</option>
-                            </select>
-                        </div>
-                        <div class="qualification-div">
-                            <div class="job-form-field">
-                                <label for="duration">Work Duration <span>(Optional)</span></label>
-                                <input type="text" name="duration" id="duration">
-                            </div>
-                            <div class="file-field input-field">
+                            <div class="col s12 inp-container">
+                                <label class="inplbl">Job Description</label>
+                                <textarea type="text" placeholder="Job Description" name="aboutjob" class="browser-default inpfield" name="title"></textarea>
+                             </div>
+                             <div class="col s12 m6 inp-container">
+                                <label class="inplbl">Application Deadline</label>
+                                <input type="datetime-local" class="browser-default inpfield" name="deadline">
+                             </div>
+                             <div class="col s12 m6 inp-container">
+                                <label class="inplbl">Sector</label>
+                                <select name="sector" class="browser-default inpfield">
+                                    <option value="" disabled selected>Select Sector</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                  </select>
+                             </div>
+                             <div class="col s12 inp-container">
+                                <label class="inplbl">Job Type</label>
+                                <select name="type" class="browser-default inpfield">
+                                    <option value="" disabled selected>Select Job Type</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                  </select>
+                             </div>
+                             <div class="col s12 m6 inp-container">
+                                <label class="inplbl">Orientation</label>
+                                <select name="orientation" class="browser-default inpfield">
+                                    <option value="" disabled selected>Work in Home/Office</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                  </select>
+                             </div>
+                             <div class="col s12" style="margin-top: 10px;">
+                                <label class="check">
+                                    <input name="workbased" type="checkbox" name="work-based-stipend" id="work-based-stipend" />
+                                    <span class="inplbl">Work Based Salary</span>
+                                </label>
+                             </div>
+                             
+                             <div class="col s12">
+                                <div class="">
+                                    <label class="inplbl">Salary </label>
+                                    <input type="number" name="salary" id="min-salary" class="salary-field inpfield browser-default" required>
+                                </div>
+                             </div>
+                             <div class="col s12">
+                                <h4>Other Information</h4>
+                                <div class="divider"></div>
+                             </div> 
+                             <div class="col s12 inp-container">
+                                <label class="inplbl">Job Requirements</label>
+                                <textarea type="text" class="browser-default inpfield" name="jobrequirements"></textarea>
+                             </div>
+                             <div class="col s12 inp-container">
+                                <label class="inplbl">No. Of Openings</label>
+                                <input type="text" class="browser-default inpfield" name="openings">
+                             </div>
+                             <div class="col s12 m6 inp-container">
+                                <label class="inplbl">Experience</label>
+                                <select name="experience" class="browser-default inpfield">
+                                    <option value="" disabled selected>Select Sector</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                  </select>
+                             </div>
+                             <div class="col s12 m6 inp-container">
+                                <label class="inplbl">Branch</label>
+                                <select name="branches" class="browser-default inpfield">
+                                    <option value="" disabled selected>Select Sector</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                  </select>
+                             </div>
+                             <div class="col s12 inp-container">
+                                <label class="inplbl">Work Duration</label>
+                                <input type="text" class="browser-default inpfield" name="duration">
+                             </div>
+                             <div class="col s12 file-field input-field">
                                 <div class="btn">
-                                    <span>File</span>
-                                    <input type="file">
+                                  <span>File</span>
+                                  <input type="file" name="files" multiple>
                                 </div>
                                 <div class="file-path-wrapper">
-                                    <input class="file-path validate" type="text">
+                                  <input class="file-path validate" type="text" placeholder="Upload one or more files">
                                 </div>
-                            </div>
+                              </div>
+                              <div class="col s12 center">
+                                  <button class="btn-large theme waves-effect">Post <i class="material-icons right">send</i></button>
+                              </div>
                         </div>
-                        <button type="submit" class="btn submit-btn">Post</button>
-                    </form>
+                        
+                   </form>
                     <div class="confirmation-page" id="confirmation-page">
                         <i class="material-icons">offline_pin</i>
                         <h1>Thank You for Submitting!</h1>
