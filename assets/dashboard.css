@@ -936,5 +936,17 @@ input[type="checkbox"] ~ span{
 .contact-item a:hover{
     text-decoration:underline;
 }
+.tab-menu-msg{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:2.5rem;
+    padding:0 0.5rem;
+}
+.tab-menu-msg p,
+.tab-menu-msg i{
+    line-height:2.5rem;
+    color:var(--skin-color);
+}
 /* User Dashboard end */
 /* main content end */
