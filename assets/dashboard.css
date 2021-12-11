@@ -969,3 +969,6 @@ input[type="checkbox"] ~ span{
 {
     margin: 10px;
 }
+textarea{
+    resize: vertical;
+}
