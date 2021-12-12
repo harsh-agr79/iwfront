@@ -996,6 +996,7 @@ textarea{
     border-right:2px solid var(--mainBgColor);
     overflow-y:scroll;
     height:90vh;
+    position: relative;
 }
 .chat-cd-search-section .chat-title-section{
     display:flex;
@@ -1012,18 +1013,25 @@ textarea{
 }
 .chat-cd-search-section .chat-title-section i{
     line-height:3.5rem;
+    color:var(--skin-color);
 }
-.search-cd-chat{
+.search-cd-chat,
+.msg-send-input{
     border:1px solid var(--mainBgColor)!important;
     border-radius:100px!important;
     padding-left: 1rem!important;
     width:95%!important;
 }
-.cd-list-section .cd-list-item .cd-dp{
+.cd-list-section .cd-list-item .cd-dp,
+.chat-msg-section .cd-dp{
     height:60px;
     width:60px;
     border:1px solid var(--mainBgColor);
     border-radius:50%;
+}
+.chat-msg-section .cd-dp{
+    height:50px;
+    width: 50px;
 }
 .cd-list-section .cd-list-item{
     display:flex;
@@ -1040,12 +1048,44 @@ textarea{
 .cd-list-section .cd-list-item .cd-info{
     margin:0 0.5rem;
 }
-.cd-list-section .cd-list-item .cd-info .cd-name{
+.cd-list-section .cd-list-item .cd-info .cd-name,
+.chat-msg-section .msg-header .cd-name{
     font-size:1rem;
     font-weight:600;
     margin:0;
 }
 .cd-list-section .cd-list-item .cd-info .recent-msg{
     font-size:0.9rem;
+}
+.chat-msg-section .msg-header{
+    display:flex;
+    justify-content: space-between;
+    border-bottom:1px solid var(--mainBgColor);
+    padding-bottom:1rem;
+    align-items: center;
+}
+.chat-msg-section .msg-header .msg-info{
+    display:flex;
+    align-items: center;
+    column-gap:0.5rem;
+}
+.chat-msg-section .msg-header i{
+    cursor:pointer;
+    color:var(--skin-color);
+}
+.chat-msg-section .msg-send-form{
+    display:flex;
+    align-items: center;
+    column-gap:0.5rem;
+    position:absolute;
+    bottom:0;
+    width:95%;  
+}
+.chat-msg-section .msg-send-form i{
+    cursor:pointer;
+    color:var(--skin-color);
+}
+.chat-msg-section .msg-send-form .msg-send-input{
+    padding:0.5rem;
 }
 /* Chat page end */
