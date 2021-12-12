@@ -972,3 +972,80 @@ input[type="checkbox"] ~ span{
 textarea{
     resize: vertical;
 }
+/* Chat page start */
+.main-chat-ui{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    width:100vw;
+    height:90vh;
+    overflow-y:hidden;
+}
+.chat-cd-search-section,
+.chat-settings-section,
+.chat-msg-section{
+    background:white;
+    padding:1rem;
+}
+.chat-cd-search-section .cd-list-section{
+    overflow-y:auto;
+    height:70vh;
+}
+.chat-msg-section{
+    grid-column:span 2;
+    border-left:2px solid var(--mainBgColor);
+    border-right:2px solid var(--mainBgColor);
+    overflow-y:scroll;
+    height:90vh;
+}
+.chat-cd-search-section .chat-title-section{
+    display:flex;
+    justify-content: space-between;
+    height:3.5rem;
+}
+.chat-cd-search-section .chat-title-section h2{
+    font-size:1.7rem;
+    font-weight:600;
+    transform:translateY(-25px);
+}
+.chat-settings-section{
+    overflow-y:hidden;
+}
+.chat-cd-search-section .chat-title-section i{
+    line-height:3.5rem;
+}
+.search-cd-chat{
+    border:1px solid var(--mainBgColor)!important;
+    border-radius:100px!important;
+    padding-left: 1rem!important;
+    width:95%!important;
+}
+.cd-list-section .cd-list-item .cd-dp{
+    height:60px;
+    width:60px;
+    border:1px solid var(--mainBgColor);
+    border-radius:50%;
+}
+.cd-list-section .cd-list-item{
+    display:flex;
+    align-items:center;
+    border:1px solid var(--mainBgColor);
+    padding:0.3rem;
+    border-radius:16px;
+    margin-bottom: 0.6rem;
+}
+.cd-list-section .cd-list-item.active{
+    background: var(--skin-color);
+    color:white;
+}
+.cd-list-section .cd-list-item .cd-info{
+    margin:0 0.5rem;
+}
+.cd-list-section .cd-list-item .cd-info .cd-name{
+    font-size:1rem;
+    font-weight:600;
+    margin:0;
+}
+.cd-list-section .cd-list-item .cd-info .recent-msg{
+    font-size:0.9rem;
+}
+/* Chat page end */
