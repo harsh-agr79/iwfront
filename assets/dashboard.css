@@ -1157,6 +1157,7 @@ textarea{
     align-items: center;
     position:absolute;
     bottom:0;
+    cursor:pointer;
 }
 .report-btn i{
     color:rgb(255, 94, 0);
