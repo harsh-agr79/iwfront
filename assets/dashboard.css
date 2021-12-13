@@ -994,9 +994,12 @@ textarea{
     grid-column:span 2;
     border-left:2px solid var(--mainBgColor);
     border-right:2px solid var(--mainBgColor);
-    overflow-y:scroll;
     height:90vh;
     position: relative;
+}
+.chat-msg-section .msg-send-section{
+    overflow-y:scroll;
+    height:70vh;
 }
 .chat-cd-search-section .chat-title-section{
     display:flex;
@@ -1014,6 +1017,7 @@ textarea{
 .chat-cd-search-section .chat-title-section i{
     line-height:3.5rem;
     color:var(--skin-color);
+    cursor: pointer;
 }
 .search-cd-chat,
 .msg-send-input{
@@ -1087,5 +1091,74 @@ textarea{
 }
 .chat-msg-section .msg-send-form .msg-send-input{
     padding:0.5rem;
+    outline:none;
+}
+.received_msg,
+.sent_msg{
+    display:block;
+    margin-bottom:-15px;
+}
+.received_msg p{
+    background-color: var(--mainBgColor);
+    border-radius:20px;
+    max-width:60%; 
+    text-align:left;
+    display: inline-block!important;
+    padding:10px!important;
+}
+.sent_msg{
+    text-align:right;
+}
+.sent_msg p{
+    background-color: var(--skin-color);
+    border-radius:20px;
+    max-width:60%; 
+    text-align:right;
+    display: inline-block!important;
+    padding:10px!important; 
+}
+.cd-dp-set{
+    width:150px;
+    height:150px;
+    border: 1px solid var(--mainBgColor);
+    border-radius:50%;
+}
+.chat-settings-section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.chat-set-search-div{
+    display: flex;
+    align-items: center;
+    margin:30px 0;
+    cursor:pointer;
+    background:#fff;
+    z-index:5;
+}
+.chat-set-searchBox input{
+    padding:10px;
+    border:1px solid var(--mainBgColor);
+    border-radius: 100px;
+    transform:translateY(-80px);
+    opacity:0;
+    transition:0.3s;
+    outline:none;
+    z-index:-1;
+    pointer-events: none;
+}
+.chat-set-searchBox input.active{
+    transform:translateY(-30px);
+    opacity:1;
+    pointer-events: all;
+}
+.report-btn{
+    display: flex;
+    align-items: center;
+    position:absolute;
+    bottom:0;
+}
+.report-btn i{
+    color:rgb(255, 94, 0);
 }
 /* Chat page end */

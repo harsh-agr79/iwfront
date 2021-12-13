@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../assets/style.css">
     <link rel="icon" href="../assets/images/title.png">
 </head>
-<body>
+<body onload="scrollToBottom()">
     <div class="main-container">
         <div class="navbar-fixed">
             <nav class="grey lighten-5">
@@ -182,16 +182,64 @@
                     <i class="material-icons">info</i>
                 </div>
                 <div class="msg-send-section">
-
+                    <div class="received_msg"> 
+                        <p>Holy Shit! Is that true?</p>
+                    </div>
+                    <div class="sent_msg">
+                        <p>Yeah. I just found out. Peter Parker is Spiderman.</p>
+                    </div>
+                    <div class="received_msg">
+                        <p>Holy Granoly! I still can't believe it.</p>
+                    </div>
+                    <div class="sent_msg">
+                        <p>You better believe it.</p>
+                    </div>
+                    <div class="received_msg">
+                        <p>Holy Granoly! I still can't believe it.</p>
+                    </div>
+                    <div class="sent_msg">
+                        <p>You better believe it.</p>
+                    </div>
+                    <div class="received_msg">
+                        <p>Holy Granoly! I still can't believe it.</p>
+                    </div>
+                    <div class="sent_msg">
+                        <p>You better believe it.</p>
+                    </div>
+                    <div class="received_msg">
+                        <p>Holy Granoly! I still can't believe it.</p>
+                    </div>
+                    <div class="sent_msg">
+                        <p>You better believe it.</p>
+                    </div>
+                    <div class="sent_msg">
+                        <p>So like.. are we gonna do it, or what?</p>
+                    </div>
+                    <div class="received_msg">
+                        <p>In voluptate ipsum officia do eu minim veniam non aliqua irure minim sint aliquip nulla. Cupidatat exercitation veniam minim culpa nisi nostrud anim id aute deserunt est ipsum. Laborum eiusmod laboris dolor laboris non deserunt amet adipisicing in fugiat ipsum aute. Officia ex excepteur cupidatat fugiat reprehenderit cupidatat ipsum.</p>
+                    </div>
                 </div>
                 <div class="msg-send-form">
-                    <i class="material-icons">insert_photo</i>
+                    <i class="material-icons">
+                        insert_photo
+                    </i>
                     <input type="text" placeholder="Aa" class="form-control browser-default msg-send-input" name="send">
                     <i class="material-icons">send</i>
                 </div>
             </div>
             <div class="chat-settings-section">
-                Do incididunt consequat est laboris labore eiusmod ex consectetur officia incididunt nulla aute nostrud pariatur. Consequat excepteur eu dolor deserunt duis et consectetur. Et excepteur culpa aliqua aliquip Lorem voluptate veniam nisi fugiat. Fugiat reprehenderit consectetur do quis. Id pariatur voluptate non excepteur ullamco in elit enim laborum ipsum tempor elit reprehenderit.
+                <img src="../assets/pngs/employee-salary.png" class="cd-dp-set">
+                <div class="chat-set-search-div">
+                    <i class="material-icons">search</i>
+                    <p>Search in Conversation</p>
+                </div>
+                <div class="chat-set-searchBox">
+                    <input type="search" name="chat-search" placeholder="Search" class="browser-default" id="search-msgs">
+                </div>
+                <div class="report-btn">
+                    <i class="material-icons">report_problem</i>
+                    <p>Report Candidate</p>
+                </div>
             </div>
         </div>
     </div>
@@ -199,4 +247,17 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="../assets/dashboard.js"></script>
+<script>
+    var msgSection = document.querySelector('.chat-msg-section .msg-send-section')
+    var srcTxt = document.querySelector('.chat-set-search-div')
+    var srcInput = document.querySelector('#search-msgs')
+
+    function scrollToBottom(){
+        msgSection.scrollTo(0, msgSection.scrollHeight)
+    }
+
+    srcTxt.addEventListener('click', () => {
+        srcInput.classList.toggle('active')
+    })
+</script>
 </html>
