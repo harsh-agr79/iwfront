@@ -992,7 +992,7 @@ textarea{
 }
 .chat-cd-search-section .cd-list-section{
     overflow-y:auto;
-    height:70vh;
+    height:calc(100vh - 190px);
 }
 .chat-msg-section{
     grid-column:span 2;
@@ -1002,7 +1002,7 @@ textarea{
 }
 .chat-msg-section .msg-send-section{
     overflow-y:scroll;
-    height:75vh;
+    height:calc(100vh - 168px);
 }
 .chat-cd-search-section .chat-title-section{
     display:flex;
@@ -1086,7 +1086,7 @@ textarea{
     align-items: center;
     column-gap:0.5rem;
     position:absolute;
-    bottom:5px;
+    margin-top:5px;
     width:95%;  
 }
 .chat-msg-section .msg-send-form i{
