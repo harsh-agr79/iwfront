@@ -1245,7 +1245,35 @@ textarea{
     margin:1rem;
     display:block;
 }
-
+.home-title{
+    text-align:center;
+}
+.home-title h1{
+    font-size:1.7rem;
+    font-weight:600;
+    text-transform: uppercase;
+}
+.home-divider{
+    width:90px;
+    height:3px;
+    background:var(--skin-color);
+    margin:0 auto;
+}
+.categories-row{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+}
+.category-item{
+    padding: 1rem 3rem;
+}
+.category-item .sector-icon{
+    width:100px;
+}
+.category-item p{
+    font-weight:600;
+    text-transform: capitalize;
+    font-size:1.5rem;
+}
 @media(max-width:695px){
     .hero .hero-content{
         width:90%;
