@@ -20,7 +20,7 @@
         }
     </style>
 </head>
-<body onload="scrollToBottom()">
+<body>
     <div class="main-container">
         <div class="navbar-fixed">
             <nav class="grey lighten-5">
@@ -260,10 +260,7 @@
     var msgSection = document.querySelector('.chat-msg-section .msg-send-section')
     var srcTxt = document.querySelector('.chat-set-search-div')
     var srcInput = document.querySelector('#search-msgs')
-
-    function scrollToBottom(){
-        msgSection.scrollTo(0, msgSection.scrollHeight)
-    }
+    msgSection.scrollTo(0, msgSection.scrollHeight)
 
     srcTxt.addEventListener('click', () => {
         srcInput.classList.toggle('active')
