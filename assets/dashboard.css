@@ -977,8 +977,12 @@ textarea{
     display:grid;
     grid-template-columns:repeat(4, 1fr);
     width:100vw;
-    height:90vh;
-    overflow-y:hidden;
+    height:calc(100vh - 66px);
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    overflow:hidden;
 }
 .chat-cd-search-section,
 .chat-settings-section,
@@ -994,12 +998,11 @@ textarea{
     grid-column:span 2;
     border-left:2px solid var(--mainBgColor);
     border-right:2px solid var(--mainBgColor);
-    height:90vh;
     position: relative;
 }
 .chat-msg-section .msg-send-section{
     overflow-y:scroll;
-    height:70vh;
+    height:75vh;
 }
 .chat-cd-search-section .chat-title-section{
     display:flex;
@@ -1067,6 +1070,7 @@ textarea{
     border-bottom:1px solid var(--mainBgColor);
     padding-bottom:1rem;
     align-items: center;
+    height:40px;
 }
 .chat-msg-section .msg-header .msg-info{
     display:flex;
@@ -1082,7 +1086,7 @@ textarea{
     align-items: center;
     column-gap:0.5rem;
     position:absolute;
-    bottom:0;
+    bottom:5px;
     width:95%;  
 }
 .chat-msg-section .msg-send-form i{
@@ -1108,6 +1112,7 @@ textarea{
 }
 .sent_msg{
     text-align:right;
+    color:white;
 }
 .sent_msg p{
     background-color: var(--skin-color);
