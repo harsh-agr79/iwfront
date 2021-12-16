@@ -1175,176 +1175,77 @@ textarea{
     margin:0;
     z-index:-1;
 }
-.hero{
-    background:url('./slider/heroBG.jpg');
-    height:70vh;
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
+.hero-section{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
     width:100vw;
-}    
-.hero .hero-content{
-    width:60%;
-    margin:0 auto;
-    text-align: center;
-    color:white;
+    min-height:70vh;
+    background:white;
 }
-.hero .hero-content h2{
-    font-weight:600;
+.hero-sign-in{
+    padding:3rem;
+}
+.hero-sign-in h2{
+    font-size:3rem;
     text-transform: capitalize;
+    color:var(--skin-color);
 }
-.hero .hero-content .hero-btn{
-    padding:0.8rem 1.5rem;
+.hero-sign-in form{
+    display:flex;
+    flex-direction: column;
+    padding:1rem;
+}
+.hero-sign-in form input{
+    width:70%;
+    padding:1rem;
+    margin:0.5rem 0;
+    border-radius:5px;
+    outline:none;
+    border:1px solid var(--mainGrey);
+}
+.hero-sign-in form a{
+    color:var(--skin-color);
+    margin:0.5rem 0;
+    cursor:pointer;
+}
+.hero-sign-in form button{
+    width:70%;
+    padding:1rem;
     background: var(--skin-color);
     border:none;
     border-radius:100px;
-    cursor:pointer;
-}
-.hero .hero-content .hero-btn,
-.hero .hero-content .hero-btn:visited{
     color:white;
-    text-decoration: none;
+    font-size:1.3rem;
 }
-.hero .hero-btn button{
-    background: transparent;
-    border:none;
-    color:white;
-    cursor:pointer;
-}
-.hero-search-form{
-    display:inline-block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin:0 auto;
-    height:40px;
-    width:50vw;
-    z-index:7;
-    margin-top:-20px;
-}
-.hero-search-form input{
-    padding:0.5rem;
-    height:100%;
-    width:80%;
-    outline:none;
-    border:1px solid var(--mainBgColor);
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
-.hero-search-form button{
-    padding:0.5rem;
-    height:100%;
-    width:10%;
-    min-width:40px;
-    background:var(--skin-color);
-    border:1px solid var(--mainBgColor);
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    color:white;
-}
-.categories-section{
-    margin:1rem;
-    display:block;
-    padding-bottom:2rem;
-}
-.home-title{
-    text-align:center;
-}
-.home-title h1{
-    font-size:1.7rem;
-    font-weight:600;
-    text-transform: uppercase;
-}
-.home-divider{
-    width:90px;
-    height:3px;
-    background:var(--skin-color);
-    margin:0 auto;
-}
-.categories-row{
-    display:grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    grid-template-rows: 1fr;
-    grid-auto-rows: 0;
-    overflow-y:hidden;
-}
-.category-item{
-    padding: 1rem 3rem;
-}
-.category-item .sector-icon{
-    width:100px;
-}
-.category-item p{
-    font-weight:600;
-    text-transform: capitalize;
-    font-size:1.5rem;
-}
-.category-view{
+.or-divider{
     display:flex;
+    width:69%;
+    color:var(--mainGrey);
     align-items: center;
     justify-content: center;
-    color:var(--skin-color);
-    height:15px;
+    column-gap:0.5rem;
 }
-.category-view p,
-.category-view i{
-    cursor:pointer;
+.or-divider div{
+    background-color:var(--mainGrey);
+    height:1px;
+    width:100%;
 }
-.jobs-listing-section{
-    margin-top:5rem;
+.hero-sign-in form .auth-btn{
+    border:1px solid var(--mainGrey);
+    background:transparent;
+    color:var(--mainGrey);
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
-.sector-tabs{
-    display:grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    grid-template-rows: 1fr;
-    grid-auto-rows: 0;
-    overflow-y:hidden;
-    background:white;
-    margin: 1rem 3rem;
-    border-radius:100px;
+.hero-sign-in form .auth-btn img{
+    width:25px;
 }
-.sector-tabs .sector-tab-item{
-    text-align: center;
-    cursor:pointer;
-}
-.sector-tabs .sector-tab-item.active{
-    background:var(--skin-color);
-    color:white;
-    border-radius: 100px;
-}
-.listed-jobs{
-    padding:2rem;
-    margin:2rem;
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-column-gap:2rem;
-    grid-row-gap:2rem;
-}
+.hero{
+    background:url('./images/iwmain.png');
+    background-size:contain;
+    background-position:center;
+    background-repeat:no-repeat;
+}    
 
-@media (max-width:762px){
-   .categories-row{
-       grid-template-rows: repeat(2, 1fr);
-   }
-}
-@media(max-width:695px){
-    .hero .hero-content{
-        width:90%;
-    }
-}
-@media(max-width:576px){
-    .sector-tabs{
-        grid-template-rows: repeat(2,1fr);
-    }
-    .listed-jobs{
-        grid-template-rows: repeat(2, 1fr);
-    }
-}
-@media(max-width:463px){
-    .hero .hero-content{
-        width:95%;
-    }
-    .hero .hero-content p{
-        display:none;
-    }
-}
 /* Home Page end */
