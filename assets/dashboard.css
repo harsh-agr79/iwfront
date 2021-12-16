@@ -1177,7 +1177,7 @@ textarea{
 }
 .hero-section{
     display:grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
     width:100vw;
     min-height:70vh;
     background:white;
@@ -1189,16 +1189,16 @@ textarea{
     font-size:3rem;
     text-transform: capitalize;
     color:var(--skin-color);
-    width:50%;
+    width:100%;
 }
 .hero-sign-in form{
     display:flex;
     flex-direction: column;
     padding:1rem;
-    width:50%;
+    width:100%;
 }
 .hero-sign-in form input{
-    width:70%;
+    width:100%;
     padding:1rem;
     margin:0.5rem 0;
     border-radius:5px;
@@ -1211,7 +1211,7 @@ textarea{
     cursor:pointer;
 }
 .hero-sign-in form button{
-    width:70%;
+    width:100%;
     padding:1rem;
     background: var(--skin-color);
     border:none;
@@ -1221,7 +1221,7 @@ textarea{
 }
 .or-divider{
     display:flex;
-    width:69%;
+    width:100%;
     color:var(--mainGrey);
     align-items: center;
     justify-content: center;
@@ -1244,50 +1244,62 @@ textarea{
     width:25px;
 }
 .hero{
-    background:url('./slider/heroBG.jpg');
-    background-size:cover;
-    width:100vw;
-    background-position:right;
+    background:url('./images/iwmain.png');
+    background-size:contain;
+    background-position:center;
     background-repeat:no-repeat;
-    background-origin: border-box;
+    display:block;
 }    
 .interest-section{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    padding:4rem 2rem;
+    margin:3rem 0;
 }
-@media(max-width:1080px){
-    .hero-sign-in h2{
-        width:70%;
-    }
-    .hero-sign-in form{
-        width:70%;
-    }
+.title-section{
+    font-weight:100;
 }
-@media(max-width:790px){
-    .hero-sign-in h2{
-        width:80%;
-    }
-    .hero-sign-in form{
-        width:80%;
-    }
+.title{
+    color:var(--mainGrey);
+    text-transform: uppercase;
+    font-size:1rem!important;
 }
-@media(max-width:685px){
-    .hero-sign-in h2{
-        width:90%;
-    }
-    .hero-sign-in form{
-        width:90%;
-    }
+.chip-item{
+    font-size:1.2rem!important;
+    background: var(--mainGrey);
+    display:inline-block;
+    padding:1rem;
+    margin-bottom:0.4rem;
+    color:white;
+    border-radius:100px;
+    text-transform: capitalize;
+    cursor:pointer;
 }
-@media(max-width:623px){
-    .hero-sign-in{
-        padding:1rem 2rem;
+.chip-item.active{
+    border:1px solid var(--mainGrey);
+    color:var(--mainGrey);
+    background:transparent;
+}
+.chip-item:hover{
+    text-decoration: underline;
+}
+.see-more-btn{
+    display: flex;
+    align-items: center;
+    color:var(--mainGrey);
+}
+.suggest-section{
+    background:white;
+}
+.post-section{
+    align-items: center;
+}
+@media(max-width:800px){
+    .hero-section{
+        grid-template-rows: 1fr 0.3fr;
     }
-    .hero-sign-in h2{
-        width:100%;
-    }
-    .hero-sign-in form{
-        width:100%;
+    .hero{
+        height:100px;
     }
 }
 /* Home Page end */
