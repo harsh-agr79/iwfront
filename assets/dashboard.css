@@ -1183,17 +1183,19 @@ textarea{
     background:white;
 }
 .hero-sign-in{
-    padding:3rem;
+    padding:1rem 4rem;
 }
 .hero-sign-in h2{
     font-size:3rem;
     text-transform: capitalize;
     color:var(--skin-color);
+    width:50%;
 }
 .hero-sign-in form{
     display:flex;
     flex-direction: column;
     padding:1rem;
+    width:50%;
 }
 .hero-sign-in form input{
     width:70%;
@@ -1242,10 +1244,50 @@ textarea{
     width:25px;
 }
 .hero{
-    background:url('./images/iwmain.png');
-    background-size:contain;
-    background-position:center;
+    background:url('./slider/heroBG.jpg');
+    background-size:cover;
+    width:100vw;
+    background-position:right;
     background-repeat:no-repeat;
+    background-origin: border-box;
 }    
-
+.interest-section{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+@media(max-width:1080px){
+    .hero-sign-in h2{
+        width:70%;
+    }
+    .hero-sign-in form{
+        width:70%;
+    }
+}
+@media(max-width:790px){
+    .hero-sign-in h2{
+        width:80%;
+    }
+    .hero-sign-in form{
+        width:80%;
+    }
+}
+@media(max-width:685px){
+    .hero-sign-in h2{
+        width:90%;
+    }
+    .hero-sign-in form{
+        width:90%;
+    }
+}
+@media(max-width:623px){
+    .hero-sign-in{
+        padding:1rem 2rem;
+    }
+    .hero-sign-in h2{
+        width:100%;
+    }
+    .hero-sign-in form{
+        width:100%;
+    }
+}
 /* Home Page end */
