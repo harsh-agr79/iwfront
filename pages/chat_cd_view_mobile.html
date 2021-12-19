@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/dashboard.css">
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="icon" href="../assets/images/title.png">
+    <style>
+        ::-webkit-scrollbar{
+            width:10px;
+        }
+        ::-webkit-scrollbar-thumb{
+            width:2px;
+            background-color: #0082cc;
+        }
+        .cd-list-mobile{
+            height:calc(100vh - 230px)!important;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="navbar-fixed">
+            <nav class="grey lighten-5">
+                <div class="nav-wrapper">
+                    <a href="../index.html" class="brand-logo hide-on-med-and-down" style="margin-left: 10px; margin-top: 5px;">
+                        <img src="../assets/images/iwmain.png" height="40" alt="">
+                    </a>
+                    <a href="../index.html" class="brand-logo hide-on-large-only">
+                        <img src="../assets/images/iw.png" height="50" alt="">
+                    </a>
+                    <a class="right hide-on-large-only" style="margin-right:10px;">
+                        <span class="btn theme modal-trigger" href="#modal3">
+                            Login
+                        </span>
+                    </a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                        <i class="material-icons black-text">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <a class="black-text" href="../jobs.html">Internships</a>
+                        </li>
+                        <li>
+                            <a class="black-text" href="../jobs.html">Freshers Jobs</a>
+                        </li>
+                        <li>
+                            <a class="black-text" href="../jobs.html">Jobs</a>
+                        </li>
+                        <li>
+                            <a class="black-text" href="../mobile.html">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-floating white">
+                                <i class="material-icons" style="color: #0082cc;">notifications</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-floating white">
+                                <i class="material-icons" style="color: #0082cc">account_circle</i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <aside class="bottom-nav">
+                <a class="bottom-tab" href="../index.html">
+                    <i class="material-icons">home</i>
+                    <p>Home</p>
+                </a>
+                <a class="bottom-tab" href="#">
+                    <i class="material-icons">group</i>
+                    <p>My Network</p>
+                </a>
+                <a class="bottom-tab active" href="#">
+                    <i class="material-icons">add_box</i>
+                    <p>Post</p>
+                </a>
+                <a class="bottom-tab" href="#">
+                    <i class="material-icons">notifications</i>
+                    <p>Notifications</p>
+                </a>
+                <a class="bottom-tab final-tab" href="../jobs.html">
+                    <i class="material-icons">business_center</i>
+                    <p>Jobs</p>
+                </a>
+            </aside>
+        </div>
+        
+        <ul class="sidenav" id="mobile-demo">
+            <li>
+                <a class="black-text" href="../jobs.html">Internships</a>
+            </li>
+            <li>
+                <a class="black-text" href="../jobs.html">Freshers Jobs</a>
+            </li>
+            <li>
+                <a class="black-text" href="../jobs.html">Jobs</a>
+            </li>
+            <li>
+                <a class="black-text" href="../mobile.html">Contact Us</a>
+            </li>
+            <li>
+                <div class="divider"></div>
+            </li>
+        </ul>
+
+        <div class="chat-cd-list-mobile">
+            <div class="chat-cd-search-section">
+                <div class="chat-title-section">
+                    <h2>Messages</h2>
+                    <i class="material-icons">settings</i>
+                </div>
+                <div class="chat-search-bar">
+                    <input type="search" class="form-control search-cd-chat" placeholder="Search Candidates" name="search"id="search">
+                </div>
+                <div class="cd-list-section cd-list-mobile">
+                    <div class="cd-list-item active">
+                        <img src="../assets/pngs/employee-salary.png" class="cd-dp">
+                        <div class="cd-info">
+                            <h1 class="cd-name">Harsh Agarwal</h1>
+                            <span class="recent-msg">Did you do what I asked?</span>
+                        </div>
+                    </div>
+                    <div class="cd-list-item">
+                        <img src="../assets/pngs/employee-salary.png" class="cd-dp">
+                        <div class="cd-info">
+                            <h1 class="cd-name">Harsh Agarwal</h1>
+                            <span class="recent-msg">Did you do what I asked?</span>
+                        </div>
+                    </div>
+                    <div class="cd-list-item">
+                        <img src="../assets/pngs/employee-salary.png" class="cd-dp">
+                        <div class="cd-info">
+                            <h1 class="cd-name">Harsh Agarwal</h1>
+                            <span class="recent-msg">Did you do what I asked?</span>
+                        </div>
+                    </div>
+                    <div class="cd-list-item">
+                        <img src="../assets/pngs/employee-salary.png" class="cd-dp">
+                        <div class="cd-info">
+                            <h1 class="cd-name">Harsh Agarwal</h1>
+                            <span class="recent-msg">Did you do what I asked?</span>
+                        </div>
+                    </div>
+                    <div class="cd-list-item">
+                        <img src="../assets/pngs/employee-salary.png" class="cd-dp">
+                        <div class="cd-info">
+                            <h1 class="cd-name">Harsh Agarwal</h1>
+                            <span class="recent-msg">Did you do what I asked?</span>
+                        </div>
+                    </div>
+                    <div class="cd-list-item">
+                        <img src="../assets/pngs/employee-salary.png" class="cd-dp">
+                        <div class="cd-info">
+                            <h1 class="cd-name">Harsh Agarwal</h1>
+                            <span class="recent-msg">Did you do what I asked?</span>
+                        </div>
+                    </div>
+                    <div class="cd-list-item">
+                        <img src="../assets/pngs/employee-salary.png" class="cd-dp">
+                        <div class="cd-info">
+                            <h1 class="cd-name">Harsh Agarwal</h1>
+                            <span class="recent-msg">Did you do what I asked?</span>
+                        </div>
+                    </div>
+                    <div class="cd-list-item">
+                        <img src="../assets/pngs/employee-salary.png" class="cd-dp">
+                        <div class="cd-info">
+                            <h1 class="cd-name">Harsh Agarwal</h1>
+                            <span class="recent-msg">Did you do what I asked?</span>
+                        </div>
+                    </div>
+                    <div class="cd-list-item">
+                        <img src="../assets/pngs/employee-salary.png" class="cd-dp">
+                        <div class="cd-info">
+                            <h1 class="cd-name">Harsh Agarwal</h1>
+                            <span class="recent-msg">Did you do what I asked?</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="../assets/dashboard.js"></script>
+</html>
