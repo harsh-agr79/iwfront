@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="./assets/dashboard.css">
     <link rel="stylesheet" href="./assets/style.css">
-    <link rel="icon" href="./assets/images/icon.png">
+    <link rel="icon" href="./assets/images/title.png">
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -46,10 +46,10 @@
             <nav class="grey lighten-5">
                 <div class="nav-wrapper">
                     <a href="./index.html" class="brand-logo hide-on-med-and-down" style="margin-left: 10px; margin-top: 5px;">
-                        <img src="./assets/images/Main-light-transparent.png" height="40" alt="">                       
+                        <img src="./assets/images/iwmain.png" height="40" alt="">                       
                     </a>
                     <a href="./index.html" class="brand-logo hide-on-large-only">
-                        <img src="./assets/images/short-transparent.png" height="50" alt="">   
+                        <img src="./assets/images/iw.png" height="50" alt="">   
                     </a>
                     <a class="right hide-on-large-only" style="margin-right:10px;">
                         <span class="btn theme modal-trigger" href="#modal3">
@@ -153,7 +153,7 @@
             <div class="title">
                 job sectors
             </div>
-            <ul class="chip-section">
+            <ul class="chip-section chip-section-1">
                 <li class="chip-item active">All Sectors</li>
                 <li class="chip-item">Marketing</li>
                 <li class="chip-item">Programming</li>
@@ -162,7 +162,7 @@
                 <li class="chip-item">Business</li>
                 <li class="chip-item">Technology</li>
             </ul>
-            <div class="see-more-btn">
+            <div class="see-more-btn see-more-btn-1" onclick="seeMore1()">
                 See More
                 <i class="material-icons">expand_more</i>
             </div>
@@ -176,7 +176,7 @@
             <div class="title">
                 suggested searches
             </div>
-            <ul class="chip-section">
+            <ul class="chip-section chip-section-2">
                 <li class="chip-item active">All Sectors</li>
                 <li class="chip-item">Marketing</li>
                 <li class="chip-item">Programming</li>
@@ -185,7 +185,7 @@
                 <li class="chip-item">Business</li>
                 <li class="chip-item">Technology</li>
             </ul>
-            <div class="see-more-btn">
+            <div class="see-more-btn see-more-btn-2" onclick="seeMore2()">
                 See More
                 <i class="material-icons">expand_more</i>
             </div>
@@ -196,24 +196,24 @@
             <h3>Post your job for millions of people to see</h3>
         </div>
         <div class="sector-select-div">
-            <ul class="chip-section">
+            <ul class="chip-section jp">
                 <li class="chip-item active">Post a Job</li>
             </ul>
         </div>
     </div>
     <div class="about-slider">
         <div class="slide-nav">
-            <span class="prev-slide">
+            <span class="prev-slide" onclick="plusSlides(-1)">
                 <i class="material-icons">arrow_back_ios</i>
                 Previous
             </span>
-            <span class="next-slide">
+            <span class="next-slide" onclick="plusSlides(1)">
                 Next
                 <i class="material-icons">arrow_forward_ios</i>
             </span>
         </div>
         <div class="slide-items">
-            <div class="slide-item active">
+            <div class="slide-item active fade">
                 <div class="slide-info">
                     <h2>Let the right people know you're open to work</h2>
                     <p>With the Open To Work feature, you can privately tell recruiters or publicly share with the LinkedIn community that you are looking for new job opportunities.</p>
@@ -222,16 +222,22 @@
                     <img src="./assets/slider/plane.png">
                 </div>
             </div>
-            <div class="slide-item">
+            <div class="slide-item fade">
                 <div class="slide-info">
                     <h2>Hire the candidates you find worthy for your vacancy</h2>
                     <p>With the Open To Work feature, you can privately tell recruiters or publicly share with the LinkedIn community that you are looking for new job opportunities.</p>
                 </div>
                 <div class="slide-img">
-                    <img src="./assets/slider/plane.png">
+                    <img src="./assets/slider/particles.png">
                 </div>
             </div>
         </div>
+    </div>
+    <div class="sign-up-div">
+        <h2>Find your ideal Employee, or your dream Job.</h2>
+        <a href="#">
+            <button class="sign-up-link">Get Started</button>
+        </a>
     </div>
 
     <footer class="page-footer theme" style="margin-top: 10vh;">
@@ -329,4 +335,48 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="./assets/dashboard.js"></script>
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slide-item");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].classList.remove('active');
+        }
+        slides[slideIndex-1].classList.add("active");
+    }
+
+    var seeMoreBtn2 = document.querySelector('.see-more-btn-2');
+    var chipItem2 = document.querySelector('.chip-section-2');
+    function seeMore2(){
+        chipItem2.classList.toggle('show')
+        if(chipItem2.classList.contains('show')){
+            seeMoreBtn2.innerHTML = "Show Less<i class='material-icons'>expand_less</i>"
+        }
+        else{
+            seeMoreBtn2.innerHTML = "Show More<i class='material-icons'>expand_more</i>"
+        }
+    }
+
+    var seeMoreBtn1 = document.querySelector('.see-more-btn-1');
+    var chipItem1 = document.querySelector('.chip-section-1');
+    function seeMore1(){
+        chipItem1.classList.toggle('show')
+        if(chipItem1.classList.contains('show')){
+            seeMoreBtn1.innerHTML = "Show Less<i class='material-icons'>expand_less</i>"
+        }
+        else{
+            seeMoreBtn1.innerHTML = "Show More<i class='material-icons'>expand_more</i>"
+        }
+    }
+</script> 
 </html>
