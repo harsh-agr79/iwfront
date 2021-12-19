@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/dashboard.css">
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="icon" href="../assets/images/title.png">
+    <style>
+        ::-webkit-scrollbar{
+            width:10px;
+        }
+        ::-webkit-scrollbar-thumb{
+            width:2px;
+            background-color: #0082cc;
+        }
+        .chat-msg-section-mobile{
+            height:calc(100vh - 200px)!important;
+        }
+        .msg-send-form-mobile{
+            position:absolute!important;
+            bottom:-25px;
+            background-color: white;
+            left:0;
+            padding:10px 0;
+            width: 100vw!important;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="navbar-fixed">
+            <nav class="grey lighten-5">
+                <div class="nav-wrapper">
+                    <a href="../index.html" class="brand-logo hide-on-med-and-down" style="margin-left: 10px; margin-top: 5px;">
+                        <img src="../assets/images/iwmain.png" height="40" alt="">
+                    </a>
+                    <a href="../index.html" class="brand-logo hide-on-large-only">
+                        <img src="../assets/images/iw.png" height="50" alt="">
+                    </a>
+                    <a class="right hide-on-large-only" style="margin-right:10px;">
+                        <span class="btn theme modal-trigger" href="#modal3">
+                            Login
+                        </span>
+                    </a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                        <i class="material-icons black-text">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <a class="black-text" href="../jobs.html">Internships</a>
+                        </li>
+                        <li>
+                            <a class="black-text" href="../jobs.html">Freshers Jobs</a>
+                        </li>
+                        <li>
+                            <a class="black-text" href="../jobs.html">Jobs</a>
+                        </li>
+                        <li>
+                            <a class="black-text" href="../mobile.html">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-floating white">
+                                <i class="material-icons" style="color: #0082cc;">notifications</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-floating white">
+                                <i class="material-icons" style="color: #0082cc">account_circle</i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <aside class="bottom-nav">
+                <a class="bottom-tab" href="../index.html">
+                    <i class="material-icons">home</i>
+                    <p>Home</p>
+                </a>
+                <a class="bottom-tab" href="#">
+                    <i class="material-icons">group</i>
+                    <p>My Network</p>
+                </a>
+                <a class="bottom-tab active" href="#">
+                    <i class="material-icons">add_box</i>
+                    <p>Post</p>
+                </a>
+                <a class="bottom-tab" href="#">
+                    <i class="material-icons">notifications</i>
+                    <p>Notifications</p>
+                </a>
+                <a class="bottom-tab final-tab" href="../jobs.html">
+                    <i class="material-icons">business_center</i>
+                    <p>Jobs</p>
+                </a>
+            </aside>
+        </div>
+        
+        <ul class="sidenav" id="mobile-demo">
+            <li>
+                <a class="black-text" href="../jobs.html">Internships</a>
+            </li>
+            <li>
+                <a class="black-text" href="../jobs.html">Freshers Jobs</a>
+            </li>
+            <li>
+                <a class="black-text" href="../jobs.html">Jobs</a>
+            </li>
+            <li>
+                <a class="black-text" href="../mobile.html">Contact Us</a>
+            </li>
+            <li>
+                <div class="divider"></div>
+            </li>
+        </ul>
+
+        <div class="chat-msg-section">
+            <div class="msg-header">
+                <div class="msg-info">
+                    <img class="cd-dp" src="../assets/pngs/employee-salary.png">
+                    <h1 class="cd-name">Harsh Agarwal</h1>
+                </div>
+                <i class="material-icons">info</i>
+            </div>
+            <div class="msg-send-section chat-msg-section-mobile">
+                <div class="received_msg"> 
+                    <p>Holy Shit! Is that true?</p>
+                </div>
+                <div class="sent_msg">
+                    <p>Yeah. I just found out. Peter Parker is Spiderman.</p>
+                </div>
+                <div class="received_msg">
+                    <p>Holy Granoly! I still can't believe it.</p>
+                </div>
+                <div class="sent_msg">
+                    <p>You better believe it.</p>
+                </div>
+                <div class="received_msg">
+                    <p>Holy Granoly! I still can't believe it.</p>
+                </div>
+                <div class="sent_msg">
+                    <p>You better believe it.</p>
+                </div>
+                <div class="received_msg">
+                    <p>Holy Granoly! I still can't believe it.</p>
+                </div>
+                <div class="sent_msg">
+                    <p>You better believe it.</p>
+                </div>
+                <div class="received_msg">
+                    <p>Holy Granoly! I still can't believe it.</p>
+                </div>
+                <div class="sent_msg">
+                    <p>You better believe it.</p>
+                </div>
+                <div class="sent_msg">
+                    <p>So like.. are we gonna do it, or what?</p>
+                </div>
+                <div class="received_msg">
+                    <p>In voluptate ipsum officia do eu minim veniam non aliqua irure minim sint aliquip nulla. Cupidatat exercitation veniam minim culpa nisi nostrud anim id aute deserunt est ipsum. Laborum eiusmod laboris dolor laboris non deserunt amet adipisicing in fugiat ipsum aute. Officia ex excepteur cupidatat fugiat reprehenderit cupidatat ipsum.</p>
+                </div>
+            </div>
+            <div class="msg-send-form msg-send-form-mobile">
+                <i class="material-icons">
+                    insert_photo
+                </i>
+                <input type="text" placeholder="Aa" class="form-control browser-default msg-send-input" name="send">
+                <i class="material-icons">send</i>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="../assets/dashboard.js"></script>
+<script>
+    var msgSection = document.querySelector('.chat-msg-section .msg-send-section')
+    var srcTxt = document.querySelector('.chat-set-search-div')
+    var srcInput = document.querySelector('#search-msgs')
+    msgSection.scrollTo(0, msgSection.scrollHeight)
+
+    srcTxt.addEventListener('click', () => {
+        srcInput.classList.toggle('active')
+    })
+</script>
+</html>
