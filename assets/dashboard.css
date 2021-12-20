@@ -1402,3 +1402,18 @@ textarea{
     }
 }
 /* Home Page end */
+
+/* Contact Us start */
+.contact-section{
+    margin:3rem;
+    width:calc(100vw - 6rem);
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+@media(max-width:768px){
+    .contact-section{
+        border-radius: 10px;
+    }
+}
+/* Contact Us end */
