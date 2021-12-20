@@ -118,58 +118,18 @@
             </li>
         </ul>
 
-        <div class="chat-msg-section">
-            <div class="msg-header">
-                <div class="msg-info">
-                    <img class="cd-dp" src="../assets/pngs/employee-salary.png">
-                    <h1 class="cd-name">Harsh Agarwal</h1>
-                </div>
-                <i class="material-icons">info</i>
+        <div class="chat-settings-section">
+            <img src="../assets/pngs/employee-salary.png" class="cd-dp-set">
+            <div class="chat-set-search-div">
+                <i class="material-icons">search</i>
+                <p>Search in Conversation</p>
             </div>
-            <div class="msg-send-section chat-msg-section-mobile">
-                <div class="received_msg"> 
-                    <p>Holy Shit! Is that true?</p>
-                </div>
-                <div class="sent_msg">
-                    <p>Yeah. I just found out. Peter Parker is Spiderman.</p>
-                </div>
-                <div class="received_msg">
-                    <p>Holy Granoly! I still can't believe it.</p>
-                </div>
-                <div class="sent_msg">
-                    <p>You better believe it.</p>
-                </div>
-                <div class="received_msg">
-                    <p>Holy Granoly! I still can't believe it.</p>
-                </div>
-                <div class="sent_msg">
-                    <p>You better believe it.</p>
-                </div>
-                <div class="received_msg">
-                    <p>Holy Granoly! I still can't believe it.</p>
-                </div>
-                <div class="sent_msg">
-                    <p>You better believe it.</p>
-                </div>
-                <div class="received_msg">
-                    <p>Holy Granoly! I still can't believe it.</p>
-                </div>
-                <div class="sent_msg">
-                    <p>You better believe it.</p>
-                </div>
-                <div class="sent_msg">
-                    <p>So like.. are we gonna do it, or what?</p>
-                </div>
-                <div class="received_msg">
-                    <p>In voluptate ipsum officia do eu minim veniam non aliqua irure minim sint aliquip nulla. Cupidatat exercitation veniam minim culpa nisi nostrud anim id aute deserunt est ipsum. Laborum eiusmod laboris dolor laboris non deserunt amet adipisicing in fugiat ipsum aute. Officia ex excepteur cupidatat fugiat reprehenderit cupidatat ipsum.</p>
-                </div>
+            <div class="chat-set-searchBox">
+                <input type="search" name="chat-search" placeholder="Search" class="browser-default" id="search-msgs">
             </div>
-            <div class="msg-send-form msg-send-form-mobile">
-                <i class="material-icons">
-                    insert_photo
-                </i>
-                <input type="text" placeholder="Aa" class="form-control browser-default msg-send-input" name="send">
-                <i class="material-icons">send</i>
+            <div class="report-btn">
+                <i class="material-icons">report_problem</i>
+                <p>Report Candidate</p>
             </div>
         </div>
     </div>
@@ -178,7 +138,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="../assets/dashboard.js"></script>
 <script>
-    var msgSection = document.querySelector('.chat-msg-section .msg-send-section')
-    msgSection.scrollTo(0, msgSection.scrollHeight)
+    var srcTxt = document.querySelector('.chat-set-search-div')
+    var srcInput = document.querySelector('#search-msgs')
+
+    srcTxt.addEventListener('click', () => {
+        srcInput.classList.toggle('active')
+    })
 </script>
 </html>
