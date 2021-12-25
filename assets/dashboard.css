@@ -53,7 +53,7 @@ pre{
 .bottom-nav .bottom-tab i{
     display:inline;
     margin-top:7px;
-    line-height:0.6;
+    line-height:0.8;
 }
 .bottom-nav .bottom-tab p{
     font-size:0.8rem;
@@ -1340,7 +1340,8 @@ textarea{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     padding:4rem 2rem;
-    margin:3rem 0;
+    margin:3rem auto;
+    overflow-x:hidden;
 }
 .title-section{
     font-weight:100;
@@ -1351,19 +1352,7 @@ textarea{
     font-size:1rem!important;
 }
 .chip-section{
-    display:grid;
-    grid-template-rows:1fr 1fr;
-    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-    grid-column-gap: 0.3rem;
-    grid-auto-rows: 0;
-    overflow-y:hidden;
-}
-.chip-section.jp{
-    display:block;
-}
-.chip-section.show{
-    grid-auto-rows: auto;
-    overflow-y:auto
+    width:100%;
 }
 .chip-item{
     font-size:1.2rem!important;
@@ -1384,6 +1373,21 @@ textarea{
 }
 .chip-item:hover{
     text-decoration: underline;
+}
+.hidden-chips{
+    display:none;
+    animation:chipShow 0.6s;
+}
+.hidden-chips.show-chips{
+    display:inline;
+}
+@keyframes chipShow{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
 }
 .see-more-btn{
     display: flex;
@@ -1417,7 +1421,6 @@ textarea{
 }
 .slide-item{
     display:flex;
-    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
     justify-content: space-around;
     align-items: center;
     padding:0 5rem;
@@ -1485,6 +1488,9 @@ textarea{
     }
     .hero{
         height:100px;
+    }
+    .hero-sign-in{
+        padding:1rem 3rem;
     }
 }
 /* Home Page end */

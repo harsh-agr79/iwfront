@@ -15,6 +15,11 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Internwheel</title>
+    <style>
+        *{
+            margin:0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -158,9 +163,15 @@
                 <li class="chip-item">Marketing</li>
                 <li class="chip-item">Programming</li>
                 <li class="chip-item">Finance</li>
-                <li class="chip-item">Health</li>
+                <li class="chip-item">Health & Medicine</li>
                 <li class="chip-item">Business</li>
                 <li class="chip-item">Technology</li>
+                <div class="hidden-chips hidChips-1">
+                    <li class="chip-item">Food</li>
+                    <li class="chip-item">Education</li>
+                    <li class="chip-item">Stage Performance</li>
+                    <li class="chip-item">Show Host</li>
+                </div>
             </ul>
             <div class="see-more-btn see-more-btn-1" onclick="seeMore1()">
                 See More
@@ -184,6 +195,12 @@
                 <li class="chip-item">Health</li>
                 <li class="chip-item">Business</li>
                 <li class="chip-item">Technology</li>
+                <div class="hidden-chips hidChips-2">
+                    <li class="chip-item">Food</li>
+                    <li class="chip-item">Education</li>
+                    <li class="chip-item">Stage Performance</li>
+                    <li class="chip-item">Show Host</li>
+                </div>
             </ul>
             <div class="see-more-btn see-more-btn-2" onclick="seeMore2()">
                 See More
@@ -356,10 +373,10 @@
     }
 
     var seeMoreBtn2 = document.querySelector('.see-more-btn-2');
-    var chipItem2 = document.querySelector('.chip-section-2');
+    var chipItem2 = document.querySelector('.hidChips-2');
     function seeMore2(){
-        chipItem2.classList.toggle('show')
-        if(chipItem2.classList.contains('show')){
+        chipItem2.classList.toggle('show-chips')
+        if(chipItem2.classList.contains('show-chips')){
             seeMoreBtn2.innerHTML = "Show Less<i class='material-icons'>expand_less</i>"
         }
         else{
@@ -368,10 +385,10 @@
     }
 
     var seeMoreBtn1 = document.querySelector('.see-more-btn-1');
-    var chipItem1 = document.querySelector('.chip-section-1');
+    var chipItem1 = document.querySelector('.hidChips-1');
     function seeMore1(){
-        chipItem1.classList.toggle('show')
-        if(chipItem1.classList.contains('show')){
+        chipItem1.classList.toggle('show-chips')
+        if(chipItem1.classList.contains('show-chips')){
             seeMoreBtn1.innerHTML = "Show Less<i class='material-icons'>expand_less</i>"
         }
         else{
