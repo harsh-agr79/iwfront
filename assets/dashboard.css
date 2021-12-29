@@ -1509,3 +1509,28 @@ textarea{
     }
 }
 /* Contact Us end */
+
+/* Privacy Conditions start */
+.privacy-section{
+    margin:2rem;
+    width:calc(100vw - 4rem);
+    padding:1rem 2rem;
+    margin-bottom:5rem;
+}
+.agree-btn{
+    text-align: right;
+}
+.btn-agree{
+    background-color: var(--skin-color);
+    border-radius:20px;
+}
+.btn-close{
+    border-radius:20px;
+    background-color: rgb(221, 21, 21);
+}
+@media(max-width:768px){
+    .privacy-section{
+        border-radius:10px;
+    }
+}
+/* Privacy Conditions end */
